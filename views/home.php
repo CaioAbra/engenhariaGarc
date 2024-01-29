@@ -4,11 +4,16 @@
 <html>
 
 <head>
-    <title>Página inicial</title>
+    <?php 
+        $pageTitle = "Página Inicial";
+        include 'components/heade.php'; 
+    ?>
 </head>
 
 <body>
-    <h1>Bem-vindo à página inicial!</h1>
+    <div class="container">
+        <h1>Bem-vindo à página inicial!</h1>
+    </div>
 </body>
 
 </html>

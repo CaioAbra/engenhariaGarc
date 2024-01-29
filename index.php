@@ -7,7 +7,8 @@ $url = isset($_GET['url']) ? $_GET['url'] : '';
 // Define as rotas e seus controladores correspondentes
 $routes = [
     '' => 'HomeController',
-    'user' => 'UserController',
+    'home' => 'HomeController',
+    'contato' => 'ContatoController',
     // Adicione mais rotas conforme necessário
 ];
 

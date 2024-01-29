@@ -1,0 +1,29 @@
+// main.scss
+
+@import 'variables';
+@import 'mixins';
+@import 'layouts/responsiveness';
+
+// Estilos para todos os elementos
+*,
+::after,
+::before {
+    box-sizing: border-box;
+
+    @include media-query("md") {
+        line-height: 1.5;
+    }
+
+    @include media-query("xl") {
+        line-height: 1.75;
+    }
+}
+
+// Estilos para o corpo do documento
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
