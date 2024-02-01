@@ -2,7 +2,9 @@
 
 @import 'variables';
 @import 'mixins';
+@import 'collors';
 @import 'layouts/responsiveness';
+@import 'components/navbar';
 
 // Estilos para todos os elementos
 *,
@@ -19,6 +21,19 @@
     }
 }
 
+
+// Outras variáveis, se necessário
+$cor-link: $cor-secundaria-1;
+
+// Estilo de um link
+a {
+    color: $cor-link;
+
+    &:hover {
+        color: darken($cor-link, 10%); // Pode usar funções do SCSS, como darken para escurecer a cor
+    }
+}
+
 // Estilos para o corpo do documento
 body {
     margin: 0;
@@ -26,4 +41,6 @@ body {
     width: 100%;
     height: 100%;
     min-height: 100vh;
+    color: $cor-texto;
+    background-color: $cor-fundo;
 }
