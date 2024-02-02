@@ -28,7 +28,17 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Quem Somos</a></li>
             <li class="dropdown">
-                <a href="#">Serviços</a>
+                <a class="dropdown-title" href="#">
+                    Serviços
+                    <svg class="icon-dropdown desactived" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+
+                    <svg class="icon-dropdown actived" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 20.7l-7-7.1-7 7.1" />
+                    </svg>
+                      
+                </a>
                 <div class="dropdown-content">
                     <a href="#">Engenharia Civil</a>
                     <a href="#">Engenharia Elétrica</a>

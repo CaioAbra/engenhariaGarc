@@ -380,7 +380,6 @@ body p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 9vh;
   transition: fill 0.3s ease;
   z-index: 1;
 }
@@ -388,30 +387,16 @@ body p {
   display: flex;
 }
 .navbar .logo a img {
-  height: 7vh;
-}
-@media (min-width: 768px) {
-  .navbar .logo a img {
-    height: 8vh;
-  }
-}
-@media (min-width: 1024px) {
-  .navbar .logo a img {
-    height: 9vh;
-  }
+  width: 11.25rem;
+  height: 5.625rem;
 }
 .navbar .menu-icon {
   cursor: pointer;
   display: block;
-  height: 4vh;
   border: solid 2px #fff;
   border-radius: 1rem;
   z-index: 2;
-}
-@media (min-width: 768px) {
-  .navbar .menu-icon {
-    height: 5vh;
-  }
+  height: 3rem;
 }
 @media (min-width: 1024px) {
   .navbar .menu-icon {
@@ -423,6 +408,7 @@ body p {
   height: 100%;
   fill: #fff;
   transition: fill 0.3s ease;
+  padding: 0.2rem;
 }
 .navbar .menu-icon svg line {
   color: #fff !important;
@@ -458,14 +444,25 @@ body p {
 .navbar .collapse .dropdown {
   display: inline-block;
 }
-.navbar .collapse .dropdown:hover .dropdown-content {
-  display: block;
+.navbar .collapse .dropdown a.dropdown-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
-.navbar .collapse .dropdown-content {
-  display: block !important;
+.navbar .collapse .dropdown a.dropdown-title svg.icon-dropdown {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .navbar .collapse .dropdown a.dropdown-title svg.icon-dropdown {
+    display: block;
+    margin-left: 0.3rem;
+  }
+}
+.navbar .collapse .dropdown .dropdown-content {
+  display: block;
   margin-left: 3rem;
 }
-.navbar .collapse .dropdown-content a {
+.navbar .collapse .dropdown .dropdown-content a {
   color: #fff;
   padding: 12px 16px;
   display: block;
@@ -473,12 +470,11 @@ body p {
   text-align: left;
   transition: background-color 0.3s ease;
 }
-.navbar .collapse .dropdown-content a:hover {
+.navbar .collapse .dropdown .dropdown-content a:hover {
   background-color: #004080;
 }
 @media (min-width: 1024px) {
-  .navbar .collapse .dropdown-content {
-    display: none;
+  .navbar .collapse .dropdown .dropdown-content {
     position: absolute;
     background-color: #001f3f;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -488,6 +484,12 @@ body p {
     margin-left: auto;
   }
 }
+.navbar .collapse .dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar .collapse .dropdown.active-drop {
+  background-color: #004080;
+}
 .navbar .collapse.active {
   display: flex;
   position: absolute;
@@ -495,7 +497,7 @@ body p {
   min-height: 100%;
   background-color: #001f3f;
   top: 0;
-  padding-top: 10vh;
+  padding-top: 6.875rem;
   z-index: 1;
 }
 .navbar .collapse.active ul.nav-links {
@@ -511,16 +513,6 @@ body p {
 }
 .navbar .collapse.closing-animation {
   animation: animateNavbarClose 0.5s ease !important;
-}
-@media (min-width: 768px) {
-  .navbar {
-    height: 10vh;
-  }
-}
-@media (min-width: 1024px) {
-  .navbar {
-    height: 12vh;
-  }
 }
 @keyframes animateNavbarOpen {
   from {
