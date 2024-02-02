@@ -79,23 +79,3 @@ $max-width in $breakpoints {
         }
     }
 }
-
-
-//Titulos
-@each $size,
-$fontSize in $fontSizes {
-    $importanceLevel: index(map-keys($fontSizes), $size);
-    $lineHeight: 1+($importanceLevel * $lineHeightStep);
-    $marginTitle: 1+($lineHeight * $marginBottomTitle);
-
-    #{$size} {
-        font-size: $fontSize;
-        line-height: $lineHeight;
-        margin-top: 0;
-        margin-bottom: $marginTitle;
-    }
-}
-
-p {
-    line-height: 1.3;
-}

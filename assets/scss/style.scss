@@ -4,6 +4,7 @@
 @import 'mixins';
 @import 'collors';
 @import 'layouts/responsiveness';
+@import 'layouts/text';
 @import 'components/navbar';
 
 // Estilos para todos os elementos
@@ -43,4 +44,5 @@ body {
     min-height: 100vh;
     color: $cor-texto;
     background-color: $cor-fundo;
+    overflow-x: hidden;
 }

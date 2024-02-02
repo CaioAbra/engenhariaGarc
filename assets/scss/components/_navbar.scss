@@ -6,6 +6,7 @@
     align-items: center;
     height: 9vh;
     transition: fill 0.3s ease;
+    z-index: 1;
 
     .logo {
         a {
@@ -31,7 +32,7 @@
         height: 4vh;
         border: solid 2px $cor-texto-navbar;
         border-radius: 1rem;
-        z-index: 1;
+        z-index: 2;
 
         @include media-query("md") {
             height: 5vh;
@@ -134,8 +135,9 @@
             background-color: $cor-primaria;
             top: 0;
             padding-top: 10vh;
-            z-index: 0;
-            width: 40vw;
+            z-index: 1;
+            // width: 15em;
+
 
             ul.nav-links {
                 display: grid;
@@ -143,13 +145,21 @@
                 top: 0;
                 margin-top: 0;
                 justify-content: left;
-                width: 100%;
+                // width: 100%;
+                animation: animateNavbarOpen .5s ease;
 
                 a {
                     text-align: left;
                 }
             }
 
+        }
+
+        &.closing-animation {
+            // ul.nav-links {
+            // width: 100%;
+            animation: animateNavbarClose .5s ease !important;
+            // }
         }
     }
 
@@ -162,4 +172,40 @@
         height: 12vh;
     }
 
+    @keyframes animateNavbarOpen {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 15em;
+        }
+    }
+
+    @keyframes animateNavbarClose {
+        from {
+            max-width: 15em;
+        }
+
+        to {
+            max-width: 0;
+        }
+    }
+
+}
+
+.block {
+    display: none;
+
+    &.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        /* Cor de fundo com efeito de vidro fumê */
+        z-index: 0;
+    }
 }

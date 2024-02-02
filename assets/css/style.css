@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   width: 100%;
   margin: auto;
@@ -325,50 +326,52 @@
     width: 100% !important;
   }
 }
-h1 {
-  font-size: 3.5rem;
-  line-height: 1.1;
-  margin-top: 0;
-  margin-bottom: 1.55vh;
+body {
+  font-size: 1rem;
+  font-weight: 400;
 }
-
-h2 {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-top: 0;
-  margin-bottom: 1.6vh;
+body .h1,
+body .h2,
+body .h3,
+body .h4,
+body .h5,
+body .h6,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
 }
-
-h3 {
+body .h1,
+body h1 {
   font-size: 2.5rem;
-  line-height: 1.3;
-  margin-top: 0;
-  margin-bottom: 1.65vh;
 }
-
-h4 {
+body .h2,
+body h2 {
   font-size: 2rem;
-  line-height: 1.4;
-  margin-top: 0;
-  margin-bottom: 1.7vh;
 }
-
-h5 {
+body .h3,
+body h3 {
+  font-size: 1.75rem;
+}
+body .h4,
+body h4 {
   font-size: 1.5rem;
-  line-height: 1.5;
-  margin-top: 0;
-  margin-bottom: 1.75vh;
 }
-
-h6 {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-top: 0;
-  margin-bottom: 1.8vh;
+body .h5,
+body h5 {
+  font-size: 1.25rem;
 }
-
-p {
-  line-height: 1.3;
+body .h6,
+body h6 {
+  font-size: 1rem;
+}
+body p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .navbar {
@@ -379,6 +382,7 @@ p {
   align-items: center;
   height: 9vh;
   transition: fill 0.3s ease;
+  z-index: 1;
 }
 .navbar .logo a {
   display: flex;
@@ -402,7 +406,7 @@ p {
   height: 4vh;
   border: solid 2px #fff;
   border-radius: 1rem;
-  z-index: 1;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .navbar .menu-icon {
@@ -492,8 +496,7 @@ p {
   background-color: #001f3f;
   top: 0;
   padding-top: 10vh;
-  z-index: 0;
-  width: 40vw;
+  z-index: 1;
 }
 .navbar .collapse.active ul.nav-links {
   display: grid;
@@ -501,10 +504,13 @@ p {
   top: 0;
   margin-top: 0;
   justify-content: left;
-  width: 100%;
+  animation: animateNavbarOpen 0.5s ease;
 }
 .navbar .collapse.active ul.nav-links a {
   text-align: left;
+}
+.navbar .collapse.closing-animation {
+  animation: animateNavbarClose 0.5s ease !important;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -515,6 +521,37 @@ p {
   .navbar {
     height: 12vh;
   }
+}
+@keyframes animateNavbarOpen {
+  from {
+    width: 0;
+  }
+  to {
+    width: 15em;
+  }
+}
+@keyframes animateNavbarClose {
+  from {
+    max-width: 15em;
+  }
+  to {
+    max-width: 0;
+  }
+}
+
+.block {
+  display: none;
+}
+.block.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Cor de fundo com efeito de vidro fumê */
+  z-index: 0;
 }
 
 *,
@@ -552,6 +589,7 @@ body {
   min-height: 100vh;
   color: #333;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

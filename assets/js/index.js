@@ -6,7 +6,7 @@ $(document).ready(function () {
     collapseNavbar()
 
     //funcionamento do sistema de dropdrown do navbar
-    dropdownNavbar() 
+    dropdownNavbar()
 });
 
 function detectOperatingSystem() {
@@ -32,10 +32,43 @@ function collapseNavbar() {
     }
 
     $("#menuIcon").on('click', function () {
-        $('.collapse').toggleClass('active');
         $('.icon-hamburguer').toggle();
         $('.icon-hamburguer-close').toggle();
+
+        if (!$('.collapse').hasClass('active')) {
+            $('.collapse').addClass('active');
+            $('.block').addClass('active');
+        } else {
+            if ($('.collapse').hasClass('active')) {
+                $('.collapse').addClass('closing-animation');
+            }
+
+            setTimeout(function () {
+                $('.collapse').removeClass('closing-animation');
+                $('.collapse').removeClass('active');
+                $('.block').removeClass('active');
+            }, 500);
+        }
     });
+
+    $(".block").on('click', function () {
+        if ($(this).hasClass('active')) {
+            console.log("active ta aqui")
+            if ($('.collapse').hasClass('active')) {
+                $('.collapse').addClass('closing-animation');
+            }
+
+            setTimeout(function () {
+                $('.collapse').removeClass('closing-animation');
+                $('.collapse').removeClass('active');
+                $('.block').removeClass('active');
+                $('.icon-hamburguer').toggle();
+                $('.icon-hamburguer-close').toggle();
+            }, 500);
+        }
+    })
+
+
 }
 
 function dropdownNavbar() {
