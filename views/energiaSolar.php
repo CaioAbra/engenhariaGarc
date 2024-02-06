@@ -12,7 +12,7 @@
     <?php include 'components/navbar.php';  ?>
 
     <div class="container">
-        <h1>Contato</h1>
+        <h1>energia Solar</h1>
         <p>teste de texto</p>
     </div>
 

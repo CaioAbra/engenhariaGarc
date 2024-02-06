@@ -5,7 +5,7 @@
 
 <head>
     <?php
-    $pageTitle = "Página Inicial";
+    $pageTitle = "GARC";
     include 'components/heade.php';
     ?>
 </head>
@@ -18,8 +18,9 @@
         <p>teste de texto</p>
     </div>
 
-    <script src="./assets/lib/jquery-3.7.1.min.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <?php
+    include 'components/insertScripts.php';
+    ?>
 </body>
 
 </html>

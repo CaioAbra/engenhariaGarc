@@ -8,6 +8,12 @@ $url = isset($_GET['url']) ? $_GET['url'] : '';
 $routes = [
     '' => 'HomeController',
     'home' => 'HomeController',
+    'quem-somos' => 'QuemSomosController',
+    'servicos' => 'ServicosController',
+    'servicos/engenharia-civil' => 'EngenhariaCivilController',
+    'servicos/engenharia-eletrica' => 'EngenhariaEletricaController',
+    'servicos/energia-solar' => 'EnergiaSolarController',
+    'projetos' => 'ProjetosController',
     'contato' => 'ContatoController',
     // Adicione mais rotas conforme necessário
 ];
@@ -16,13 +22,13 @@ $routes = [
 if (array_key_exists($url, $routes)) {
     // Obtém o nome do controlador correspondente à rota
     $controllerName = $routes[$url];
-    
+
     // Inclui o arquivo do controlador
     require_once 'controllers/' . $controllerName . '.php';
-    
+
     // Instancia o controlador
     $controller = new $controllerName();
-    
+
     // Chama o método padrão do controlador (por exemplo, "index" ou "home")
     $controller->index();
 } else {

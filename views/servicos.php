@@ -3,7 +3,7 @@
 
 <head>
     <?php
-    $pageTitle = ucwords(str_replace('-', ' ', basename($_SERVER['REQUEST_URI']))) . " | GARC";
+    $pageTitle = "Serviços | GARC";
     include 'components/heade.php';
     ?>
 </head>
@@ -12,7 +12,7 @@
     <?php include 'components/navbar.php';  ?>
 
     <div class="container">
-        <h1>Contato</h1>
+        <h1>Servicos</h1>
         <p>teste de texto</p>
     </div>
 

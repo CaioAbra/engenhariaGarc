@@ -3,6 +3,7 @@
 
 <head>
     <?php
+    // $pageTitle = ucfirst(basename($_SERVER['REQUEST_URI'])) . " | GARC";
     $pageTitle = ucwords(str_replace('-', ' ', basename($_SERVER['REQUEST_URI']))) . " | GARC";
     include 'components/heade.php';
     ?>
@@ -12,7 +13,7 @@
     <?php include 'components/navbar.php';  ?>
 
     <div class="container">
-        <h1>Contato</h1>
+        <h1>Quem Somos</h1>
         <p>teste de texto</p>
     </div>
 
