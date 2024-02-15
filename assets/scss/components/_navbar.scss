@@ -23,7 +23,7 @@
         display: block;
         border: solid 2px $cor-texto-navbar;
         border-radius: 1rem;
-        z-index: 2;
+        z-index: 9999;
         height: 3rem;
 
         @include media-query("md") {}
@@ -118,7 +118,7 @@
                     position: absolute;
                     background-color: $cor-primaria;
                     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                    z-index: 1;
+                    z-index: 9999;
                     opacity: 0;
                     transition: opacity 0.3s ease;
                     margin-left: auto;
@@ -145,7 +145,7 @@
             background-color: $cor-primaria;
             top: 0;
             padding-top: 6.875rem;
-            z-index: 1;
+            z-index: 999;
 
 
             ul.nav-links {
@@ -211,6 +211,6 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         /* Cor de fundo com efeito de vidro fumê */
-        z-index: 0;
+        z-index: 3;
     }
 }

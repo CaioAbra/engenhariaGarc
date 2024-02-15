@@ -1,7 +1,7 @@
 <!-- home.php -->
 
 <!DOCTYPE html>
-<html>
+<html lang="PT-BR">
 
 <head>
     <?php
@@ -14,6 +14,8 @@
     <?php include 'components/navbar.php';  ?>
 
     <div class="container">
+        <?php include 'components/carousel.php';  ?>
+        
         <h1>Bem-vindo à página inicial!</h1>
         <p>teste de texto</p>
     </div>

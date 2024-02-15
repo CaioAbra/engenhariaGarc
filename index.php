@@ -1,6 +1,15 @@
 <?php
 // index.php
 
+// Obtém o caminho da URL
+$url_path = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+// Divide a URL em partes usando "/"
+$path_parts = explode('/', trim($url_path, '/'));
+
+// Definir constantes globais para caminhos base e caminhos de ativos
+define('BASE_PATH', count($path_parts) >= 3 ? "../" : "./");
+define('BASE_PATH_ASSETS', count($path_parts) >= 3 ? "../assets/" : "./assets/");
+
 // Obtém a URL da solicitação
 $url = isset($_GET['url']) ? $_GET['url'] : '';
 

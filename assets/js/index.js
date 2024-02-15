@@ -7,6 +7,9 @@ $(document).ready(function () {
 
     //funcionamento do sistema de dropdrown do navbar
     dropdownNavbar()
+
+    // Inicializa o carrossel
+    carouselAnimation()
 });
 
 function detectOperatingSystem() {
@@ -104,4 +107,50 @@ function dropdownNavbar() {
             }
         });
     }
+}
+
+function carouselAnimation() {
+    var currentIndex = 0;
+    var items = $('.carousel-item');
+    var isDragging = false;
+    var startX, endX;
+
+    $('.carousel-arrow.next').click(showNextItem);
+    $('.carousel-arrow.prev').click(showPrevItem);
+
+    $('.carousel').on('touchstart', touchStart);
+    $('.carousel').on('touchmove', touchMove);
+    $('.carousel').on('touchend', touchEnd);
+
+    function touchStart(event) {
+        isDragging = true;
+        startX = event.originalEvent.touches[0].clientX;
+    }
+
+    function touchMove(event) {
+        if (!isDragging) return;
+        endX = event.originalEvent.touches[0].clientX;
+    }
+
+    function touchEnd() {
+        if (!isDragging) return;
+        isDragging = false;
+        var diff = endX - startX;
+        if (diff > 50) showPrevItem();
+        else if (diff < -50) showNextItem();
+    }
+
+    function showNextItem() {
+        items.removeClass('active');
+        currentIndex = (currentIndex + 1) % items.length;
+        $(items[currentIndex]).addClass('active');
+    }
+
+    function showPrevItem() {
+        items.removeClass('active');
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        $(items[currentIndex]).addClass('active');
+    }
+
+    setInterval(showNextItem, 5000);
 }

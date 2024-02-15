@@ -31,19 +31,5 @@
 <meta name="twitter:url" content="https://www.engenhariagarc.com/"> <!-- URL real da sua página -->
 
 <!-- Estilos e Ícone da Página -->
-<?php
-// Obtém o caminho da URL
-$url_path = $_SERVER['REQUEST_URI'];
-// Divide a URL em partes usando "/"
-$path_parts = explode('/', trim($url_path, '/'));
-// Dependendo do número de partes no caminho, você define diferentes caminhos
-if (count($path_parts) >= 3) {
-    $base_path="../assets/";
-} else {
-    $base_path="./assets/";
-}
-?>
-<!-- <link rel="shortcut icon" type="image/png" href="./assets/img/ico.png"> -->
-<link rel="shortcut icon" type="image/png" href="<?php echo $base_path . 'img/ico.png'; ?>">
-<!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
-<link rel="stylesheet" href="<?php echo $base_path . 'css/style.css'; ?>">
+<link rel="shortcut icon" type="image/png" href="<?php echo BASE_PATH_ASSETS; ?>img/ico.png">
+<link rel="stylesheet" href="<?php echo BASE_PATH_ASSETS; ?>css/style.css">
