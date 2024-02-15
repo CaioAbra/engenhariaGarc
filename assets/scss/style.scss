@@ -4,6 +4,7 @@
 @import 'mixins';
 @import 'collors';
 @import 'layouts/responsiveness';
+@import 'layouts/spacers';
 @import 'layouts/text';
 @import 'components/navbar';
 @import 'components/carousel';
@@ -46,4 +47,48 @@ body {
     color: $cor-texto;
     background-color: $cor-fundo;
     overflow-x: hidden;
+}
+
+//introduçao garc
+.introducaoGarc {
+    // background-color: $cor-primaria;
+    background-color: rgba($cor-primaria, .2);
+
+    a.contato {
+        text-decoration: none;
+        color: $cor-texto;
+        transition: color .3s ease;
+        font-weight: bold;
+
+        &:hover {
+            color: $cor-hover;
+        }
+    }
+
+    a.cta-saibaMais {
+        text-decoration: none;
+        background-color: #001f3f;
+        color: #fff;
+        padding: 0.5rem 1.5rem;
+        border: none;
+        border-radius: 1rem 2rem;
+        transition: background-color 0.3s ease;
+        box-shadow: 0rem 0rem 0.5rem 0rem #fff;
+
+        &:hover {
+            background-color: $cor-hover;
+        }
+    }
+}
+
+.img {
+    border-radius: 1rem;
+
+    &.img-responsive {
+        max-width: 100%;
+
+        @include media-query("lg") {
+            max-height: 20rem;
+        }
+    }
 }

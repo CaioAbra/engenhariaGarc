@@ -53,8 +53,18 @@ body {
         margin-bottom: .5rem;
     }
 
-    .text-align-center{
-        text-align: center;
+    $text-align-values: (
+        "left": left,
+        "right": right,
+        "center": center,
+        "justify": justify,
+    );
+
+@each $name, $value in $text-align-values {
+    .text-align-#{$name} {
+        text-align: $value;
     }
+}
+
 
 }

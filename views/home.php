@@ -13,12 +13,15 @@
 <body>
     <?php include 'components/navbar.php';  ?>
 
-    <div class="container">
-        <?php include 'components/carousel.php';  ?>
-        
-        <h1>Bem-vindo à página inicial!</h1>
-        <p>teste de texto</p>
-    </div>
+    <main>
+        <section>
+            <?php include 'components/carousel.php';  ?>
+        </section>
+
+        <section class="introducaoGarc">
+            <?php include 'components/introducaoGarc.php';  ?>
+        </section>
+    </main>
 
     <?php
     include 'components/insertScripts.php';
