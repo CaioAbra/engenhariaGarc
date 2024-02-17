@@ -108,3 +108,38 @@ $justify-content-values: (
         justify-content: $value;
     }
 }
+
+$justify-content-values: (
+    "start": flex-start,
+    "end": flex-end,
+    "center": center,
+    "between": space-between,
+    "around": space-around,
+);
+
+@each $name, $value in $justify-content-values {
+    .justify-#{$name} {
+        justify-content: $value;
+    }
+}
+
+// Defina a lista de tamanhos de coluna do Bootstrap
+$col-sizes: (
+    "xs",
+    "sm",
+    "md",
+    "lg",
+    "xl"
+);
+
+// Defina o padding desejado
+$col-padding: 0.7rem;
+
+// Itere sobre os tamanhos de coluna e adicione o padding
+@each $size in $col-sizes {
+    @for $i from 1 through 12 {
+        .col-#{$size}-#{$i} {
+            padding: $col-padding;
+        }
+    }
+}

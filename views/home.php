@@ -19,13 +19,19 @@
         </section>
 
         <section class="introducaoGarc">
-            <?php include 'components/introducaoGarc.php';  ?>
+            <?php include 'components/introducaoGarc.php'; ?>
+        </section>
+
+        <section class="whereJobs">
+            <?php include 'components/whereJobs.php'; ?>
         </section>
     </main>
 
-    <?php
-    include 'components/insertScripts.php';
-    ?>
+    <footer class="mt-1">
+        <?php include 'components/footer.php'; ?>
+    </footer>
+
+    <?php include 'components/insertScripts.php'; ?>
 </body>
 
 </html>

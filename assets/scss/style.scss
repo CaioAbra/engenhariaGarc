@@ -8,6 +8,8 @@
 @import 'layouts/text';
 @import 'components/navbar';
 @import 'components/carousel';
+@import 'components/cards';
+@import 'components/footer';
 
 // Estilos para todos os elementos
 *,
@@ -31,6 +33,7 @@ $cor-link: $cor-secundaria-1;
 // Estilo de um link
 a {
     color: $cor-link;
+    transition: color 0.3s ease;
 
     &:hover {
         color: darken($cor-link, 10%); // Pode usar funções do SCSS, como darken para escurecer a cor
