@@ -10,6 +10,7 @@
 @import 'components/carousel';
 @import 'components/cards';
 @import 'components/footer';
+@import 'components/accordion';
 
 // Estilos para todos os elementos
 *,
@@ -51,6 +52,11 @@ body {
     background-color: $cor-fundo;
     overflow-x: hidden;
 }
+
+section {
+    padding: 2rem 0;
+}
+
 
 //introduçao garc
 .introducaoGarc {
@@ -94,4 +100,289 @@ body {
             max-height: 20rem;
         }
     }
+}
+
+.home {
+    .whereJobs {
+        // background-color: rgba($cor-primaria, .2);
+
+        .card {
+            @include media-query('lg') {
+                min-height: 29.875rem;
+
+                &-text {
+                    min-height: 7.9375rem;
+                }
+            }
+
+            @include media-query('xl') {
+                min-height: 29.875rem;
+
+                &-text {
+                    min-height: 5rem;
+                }
+            }
+        }
+    }
+}
+
+
+//quem somos
+.quemSomos {
+    .bannerQuemSomos {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/quemSomos.jpg');
+        background-position-y: 52%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &>.container>.row {
+            height: 9rem;
+
+            h1 {
+                color: $cor-texto-navbar;
+                text-shadow: 0 0 5px $cor-primaria;
+                margin-top: 0;
+
+            }
+
+            h6 {
+                color: $cor-secundaria-1;
+                font-weight: bold;
+                text-shadow: 0 0 5px $cor-primaria;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    h4 {
+        font-weight: bold;
+
+        span {
+            color: $cor-hover;
+            transition: color .3s ease;
+
+            &:hover {
+                color: $cor-secundaria-1;
+            }
+        }
+    }
+
+    p {
+        span {
+            font-weight: bold;
+            color: $cor-hover;
+        }
+    }
+
+    .missaoValores {
+        background-color: rgba($cor-primaria, .2);
+
+        h4 {
+            span {
+                color: $cor-hover;
+            }
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 0;
+            list-style-type: none;
+            padding-left: 0;
+
+            li {
+                text-transform: capitalize;
+
+                &::before {
+                    content: "\2714";
+                    /* Código Unicode para o ícone de check */
+                    color: $cor-hover;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    }
+
+    .whereJobs {
+        background-color: rgba($cor-primaria, .2);
+
+        .card {
+            @include media-query('lg') {
+                min-height: 29.875rem;
+
+                &-text {
+                    min-height: 7.9375rem;
+                }
+            }
+
+            @include media-query('xl') {
+                min-height: 29.875rem;
+
+                &-text {
+                    min-height: 5rem;
+                }
+            }
+        }
+    }
+
+
+}
+
+//servicos
+
+.servicos {
+    .card {
+        position: relative;
+        overflow: hidden;
+        // margin-bottom: 1.25rem;
+
+        .card-body {
+            position: relative;
+            /* Para que o título fique na frente da imagem */
+            z-index: 1;
+            /* Garante que o título esteja na frente da imagem */
+        }
+
+        .card-title {
+            color: white;
+            /* Define a cor do texto como branca */
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            /* Adiciona uma leve sombra ao texto para destacá-lo */
+            margin: 20px;
+            /* Adiciona margem para espaçamento */
+        }
+
+        &-engenharia-civil {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/cardEngenhariacivil.jpg');
+        }
+
+        &-engenharia-eletrica {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/cardEngenhariaeletrica.jpg');
+        }
+
+        &-energia-solar {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/cardEnergiaSolar.jpg');
+            background-position-x: left;
+            background-position-y: center;
+        }
+
+        &-acordion {
+            .collapse {
+                .card-body {
+                    margin: 0 20px;
+                }
+            }
+        }
+
+        &-consultoria {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/cardConsultoria.jpg');
+            background-position-y: 25%;
+            background-size: cover;
+            background-position-x: center;
+
+            .collapse {
+                .card-body p {
+                    color: white;
+                    /* Define a cor do texto como branca */
+                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+
+        &-servicos-personalizados {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/cardServicosPersonalizados.jpg');
+            background-position: left;
+
+            .collapse {
+                .card-body p {
+                    color: white;
+                    /* Define a cor do texto como branca */
+                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+
+    }
+
+
+    .card-acordion {
+        cursor: pointer;
+
+        .card-body {
+            transition: background-color 0.3s ease;
+
+            // &:hover {
+            //     background-color: lighten($color-primary, 10%);
+            // }
+        }
+
+        .collapse {
+            display: none;
+
+            &.show {
+                display: block;
+            }
+        }
+    }
+
+    .why {
+        background-color: rgba($cor-primaria, .2);
+
+        h3 {
+            span {
+                color: $cor-primaria;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $cor-primaria;
+            font-weight: bold;
+        }
+
+        .imageContato{
+            img{
+                width: 100%;
+                object-fit: cover;
+                position: relative;
+                display: flex;
+                border-radius: 1rem;
+                max-height: 15rem;
+
+                @include media-query("xl"){
+                    max-height: 30vh;
+                }
+                
+            }
+        }
+    }
+
+}
+
+
+.banner {
+    &>.container>.row {
+        height: 9rem;
+
+        h1 {
+            color: $cor-texto-navbar;
+            text-shadow: 0 0 5px $cor-primaria;
+            margin-top: 0;
+
+        }
+
+        h6 {
+            color: $cor-secundaria-1;
+            font-weight: bold;
+            text-shadow: 0 0 5px $cor-primaria;
+            margin-bottom: 0;
+        }
+    }
+
+    &-servicos {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/bannerServicos.jpg');
+        background-position-y: 52%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 }

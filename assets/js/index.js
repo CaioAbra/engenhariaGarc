@@ -10,6 +10,11 @@ $(document).ready(function () {
 
     // Inicializa o carrossel
     carouselAnimation()
+
+    //accordion
+    accordion()
+
+    accordionServicos()
 });
 
 function detectOperatingSystem() {
@@ -153,4 +158,26 @@ function carouselAnimation() {
     }
 
     setInterval(showNextItem, 5000);
+}
+
+function accordion() {
+    $(".accordion-item .accordion-content").hide(); // Esconde todos os conteúdos do acordeão por padrão
+
+    $(".accordion-header").click(function () {
+        var content = $(this).next(".accordion-content");
+        $(".accordion-content").not(content).slideUp(); // Fecha todos os outros conteúdos do acordeão
+        content.slideToggle(); // Alterna a visibilidade do conteúdo clicado
+    });
+
+
+}
+
+function accordionServicos() {
+    $(".card-acordion .collapse").hide(); // Esconde todos os conteúdos do acordeão por padrão
+
+    $(".card-acordion").click(function () {
+        var content = $(this).find(".collapse"); // Alterado para encontrar .collapse dentro de .card-acordion
+        $(".collapse").not(content).slideUp(); // Fecha todos os outros conteúdos do acordeão
+        content.slideToggle(); // Alterna a visibilidade do conteúdo clicado
+    });
 }

@@ -13,7 +13,7 @@
 <body>
     <?php include 'components/navbar.php';  ?>
 
-    <main>
+    <main class="home">
         <section>
             <?php include 'components/carousel.php';  ?>
         </section>

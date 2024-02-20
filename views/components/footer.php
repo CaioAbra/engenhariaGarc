@@ -5,7 +5,8 @@
                 <h3>Contato</h3>
                 <h6 class="mt-0">Telefone:</h6>
                 <p>
-                    <a href="tel:11941262774"><i class="fas fa-phone"></i> 11 94126-2774</a>
+                    <a href="tel:11941262774">11 94126-2774</a><br>
+                    <a href="tel:11941262774">11 94019-7369</a>
                 </p>
                 <h6 class="mt-0">E-mail:</h6>
                 <p>

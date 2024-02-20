@@ -5,6 +5,7 @@
     padding: 0 nth($spacing, 1);
     max-width: 100%;
 
+    // Configurações de largura e padding para diferentes tamanhos de tela
     @include media-query("sm") {
         padding: 0 nth($spacing, 2);
         max-width: 34rem;
@@ -33,15 +34,15 @@
     margin: auto;
 }
 
-//colunas
+// Colunas
 @function calculate-column-width($columns) {
     $base-column-width: calc(100% / 12);
     $column-width: $base-column-width * $columns;
     @return $column-width;
 }
 
-@each $breakpoint,
-$max-width in $breakpoints {
+// Iterar sobre os breakpoints e definir largura para cada número de colunas
+@each $breakpoint, $max-width in $breakpoints {
     @media screen and (min-width: $max-width) {
         @for $i from 1 through 12 {
             .col-#{$breakpoint}-#{$i} {
@@ -59,8 +60,7 @@ $max-width in $breakpoints {
     }
 }
 
-@each $breakpoint,
-$max-width in $breakpoints {
+@each $breakpoint, $max-width in $breakpoints {
     @media screen and (max-width: $max-width) {
         .col-#{$breakpoint} {
             &.col {
@@ -70,6 +70,7 @@ $max-width in $breakpoints {
     }
 }
 
+// Definir colunas extras-large
 @media screen and (min-width: map-get($breakpoints, "extra-large")) {
     .col-xl {
         @for $i from 1 through 12 {
@@ -80,6 +81,7 @@ $max-width in $breakpoints {
     }
 }
 
+// Configurações de display
 $display-values: (
     "block": block,
     "inline": inline,
@@ -94,6 +96,7 @@ $display-values: (
     }
 }
 
+// Configurações de justify-content
 $justify-content-values: (
     "start": flex-start,
     "end": flex-end,
@@ -109,37 +112,41 @@ $justify-content-values: (
     }
 }
 
-$justify-content-values: (
-    "start": flex-start,
-    "end": flex-end,
-    "center": center,
-    "between": space-between,
-    "around": space-around,
-);
-
-@each $name, $value in $justify-content-values {
-    .justify-#{$name} {
-        justify-content: $value;
-    }
-}
-
-// Defina a lista de tamanhos de coluna do Bootstrap
+// Definir tamanhos de coluna do Bootstrap e adicionar padding
 $col-sizes: (
+    "",
     "xs",
     "sm",
     "md",
     "lg",
     "xl"
 );
-
-// Defina o padding desejado
 $col-padding: 0.7rem;
 
-// Itere sobre os tamanhos de coluna e adicione o padding
 @each $size in $col-sizes {
     @for $i from 1 through 12 {
         .col-#{$size}-#{$i} {
             padding: $col-padding;
         }
+
+        .col-#{$i} {
+            padding: $col-padding;
+        }
+    }
+}
+
+// Configurações de align-content
+$align-content-values: (
+    "start": flex-start,
+    "end": flex-end,
+    "center": center,
+    "between": space-between,
+    "around": space-around,
+    "stretch": stretch
+);
+
+@each $name, $value in $align-content-values {
+    .align-content-#{$name} {
+        align-content: $value;
     }
 }
