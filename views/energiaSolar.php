@@ -11,14 +11,17 @@
 <body>
     <?php include 'components/navbar.php';  ?>
 
-    <div class="container">
-        <h1>energia Solar</h1>
-        <p>teste de texto</p>
-    </div>
+    <main>
 
+    </main>
+
+    <footer class="">
+        <?php include 'components/footer.php'; ?>
+    </footer>
     <?php
     include 'components/insertScripts.php';
     ?>
+
 </body>
 
 </html>

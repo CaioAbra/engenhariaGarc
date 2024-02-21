@@ -80,9 +80,9 @@
                     <div class="col-12 col-md-6">
                         <div class="card card-acordion card-consultoria">
                             <div class="card-body">
-                                <h5 class="card-title mb-0">Consultoria e Gerenciamento</h5>
+                                <h5 class="card-title mb-0">Consultoria</h5>
                             </div>
-                            <div class="collapse">
+                            <div class="collapseCard">
                                 <div class="card-body">
                                     <p>
                                         Além dos serviços técnicos, também fornecemos consultoria especializada e
@@ -100,7 +100,7 @@
                             <div class="card-body">
                                 <h5 class="card-title mb-0">Serviços Personalizados</h5>
                             </div>
-                            <div class="collapse">
+                            <div class="collapseCard">
                                 <div class="card-body">
                                     <p>
                                         Entendemos que cada projeto é único, por isso estamos sempre dispostos a adaptar

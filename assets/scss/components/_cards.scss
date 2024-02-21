@@ -52,5 +52,21 @@ $card-btn-hover-bg-color: $cor-hover;
         }
     }
 
-    
+
+}
+
+.card-acordion {
+    cursor: pointer;
+
+    .card-body {
+        transition: background-color 0.3s ease;
+    }
+
+    .collapseCard {
+        display: none;
+
+        &.show {
+            display: block;
+        }
+    }
 }

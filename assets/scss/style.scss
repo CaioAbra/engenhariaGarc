@@ -266,7 +266,7 @@ section {
         }
 
         &-acordion {
-            .collapse {
+            .collapseCard {
                 .card-body {
                     margin: 0 20px;
                 }
@@ -279,7 +279,7 @@ section {
             background-size: cover;
             background-position-x: center;
 
-            .collapse {
+            .collapseCard {
                 .card-body p {
                     color: white;
                     /* Define a cor do texto como branca */
@@ -292,7 +292,7 @@ section {
             background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/cardServicosPersonalizados.jpg');
             background-position: left;
 
-            .collapse {
+            .collapseCard {
                 .card-body p {
                     color: white;
                     /* Define a cor do texto como branca */
@@ -302,62 +302,149 @@ section {
         }
 
     }
-
-
-    .card-acordion {
-        cursor: pointer;
-
-        .card-body {
-            transition: background-color 0.3s ease;
-
-            // &:hover {
-            //     background-color: lighten($color-primary, 10%);
-            // }
-        }
-
-        .collapse {
-            display: none;
-
-            &.show {
-                display: block;
-            }
-        }
-    }
-
-    .why {
-        background-color: rgba($cor-primaria, .2);
-
-        h3 {
-            span {
-                color: $cor-primaria;
-            }
-        }
-
-        a {
-            text-decoration: none;
-            color: $cor-primaria;
-            font-weight: bold;
-        }
-
-        .imageContato{
-            img{
-                width: 100%;
-                object-fit: cover;
-                position: relative;
-                display: flex;
-                border-radius: 1rem;
-                max-height: 15rem;
-
-                @include media-query("xl"){
-                    max-height: 30vh;
-                }
-                
-            }
-        }
-    }
-
 }
 
+//engenharia-civil
+main.engenharia-civil {
+    h4 {
+        color: $cor-primaria;
+    }
+
+    .card-img {
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        border: 1px solid $cor-primaria;
+        border-radius: 10px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: fill;
+            border-radius: 10px;
+        }
+
+        @include media-query("lg") {
+            max-height: 30vh;
+        }
+    }
+
+    section.serviscos-prestados {
+        background-color: rgba($cor-primaria, .2);
+
+    }
+
+    .card {
+
+        .card-title,
+        .card-body p {
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+        }
+
+        &-Alvenaria {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/alvenaria.jpg');
+        }
+
+        &-Manutencao {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/manutencao.jpg');
+        }
+
+        &-Pintura {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/pintura.jpg');
+        }
+
+        &-Revestimento {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/revestimento.jpg');
+        }
+
+        &-Serralheria {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/serralheria.jpg');
+        }
+    }
+}
+
+
+main.engenharia-eletrica {
+
+    h4 {
+        color: $cor-primaria;
+    }
+
+    .card-img {
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        border: 1px solid $cor-primaria;
+        border-radius: 10px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: fill;
+            border-radius: 10px;
+        }
+
+        @include media-query("lg") {
+            max-height: 30vh;
+        }
+    }
+
+    .serviscos-prestados {
+        background-color: rgba($cor-primaria, .2);
+    }
+
+    .card {
+
+        .card-title,
+        .card-body p {
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+        }
+
+        &-instalacao-eletrica {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/instalacaoEletrica.png');
+        }
+
+        &-spda {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/spda.jpg');
+        }
+    }
+}
+
+.why {
+    background-color: rgba($cor-primaria, .2);
+
+    h3 {
+        span {
+            color: $cor-primaria;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $cor-primaria;
+        font-weight: bold;
+    }
+
+    .imageContato {
+        img {
+            width: 100%;
+            object-fit: cover;
+            position: relative;
+            display: flex;
+            border-radius: 1rem;
+            max-height: 15rem;
+
+            @include media-query("xl") {
+                max-height: 30vh;
+            }
+
+        }
+    }
+}
 
 .banner {
     &>.container>.row {
@@ -381,6 +468,20 @@ section {
     &-servicos {
         background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/bannerServicos.jpg');
         background-position-y: 52%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-engenharia-civil {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/bannerCivil.jpg');
+        background-position-y: 60%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-engenharia-eletrica {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/bannerEletrico.jpg');
+        background-position-y: 60%;
         background-repeat: no-repeat;
         background-size: cover;
     }

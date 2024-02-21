@@ -1621,6 +1621,19 @@ body .text-align-justify {
   color: #fff;
 }
 
+.card-acordion {
+  cursor: pointer;
+}
+.card-acordion .card-body {
+  transition: background-color 0.3s ease;
+}
+.card-acordion .collapseCard {
+  display: none;
+}
+.card-acordion .collapseCard.show {
+  display: block;
+}
+
 footer {
   background-color: #001f3f;
   font-size: 0.8rem;
@@ -1864,7 +1877,7 @@ section {
   background-position-x: left;
   background-position-y: center;
 }
-.servicos .card-acordion .collapse .card-body {
+.servicos .card-acordion .collapseCard .card-body {
   margin: 0 20px;
 }
 .servicos .card-consultoria {
@@ -1873,7 +1886,7 @@ section {
   background-size: cover;
   background-position-x: center;
 }
-.servicos .card-consultoria .collapse .card-body p {
+.servicos .card-consultoria .collapseCard .card-body p {
   color: white;
   /* Define a cor do texto como branca */
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -1882,35 +1895,107 @@ section {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/cardServicosPersonalizados.jpg");
   background-position: left;
 }
-.servicos .card-servicos-personalizados .collapse .card-body p {
+.servicos .card-servicos-personalizados .collapseCard .card-body p {
   color: white;
   /* Define a cor do texto como branca */
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
-.servicos .card-acordion {
-  cursor: pointer;
-}
-.servicos .card-acordion .card-body {
-  transition: background-color 0.3s ease;
-}
-.servicos .card-acordion .collapse {
-  display: none;
-}
-.servicos .card-acordion .collapse.show {
-  display: block;
-}
-.servicos .why {
-  background-color: rgba(0, 31, 63, 0.2);
-}
-.servicos .why h3 span {
+
+main.engenharia-civil h4 {
   color: #001f3f;
 }
-.servicos .why a {
+main.engenharia-civil .card-img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  border: 1px solid #001f3f;
+  border-radius: 10px;
+}
+main.engenharia-civil .card-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+}
+@media (min-width: 1024px) {
+  main.engenharia-civil .card-img {
+    max-height: 30vh;
+  }
+}
+main.engenharia-civil section.serviscos-prestados {
+  background-color: rgba(0, 31, 63, 0.2);
+}
+main.engenharia-civil .card .card-title,
+main.engenharia-civil .card .card-body p {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+main.engenharia-civil .card-Alvenaria {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/alvenaria.jpg");
+}
+main.engenharia-civil .card-Manutencao {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/manutencao.jpg");
+}
+main.engenharia-civil .card-Pintura {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/pintura.jpg");
+}
+main.engenharia-civil .card-Revestimento {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/revestimento.jpg");
+}
+main.engenharia-civil .card-Serralheria {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/serralheria.jpg");
+}
+
+main.engenharia-eletrica h4 {
+  color: #001f3f;
+}
+main.engenharia-eletrica .card-img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  border: 1px solid #001f3f;
+  border-radius: 10px;
+}
+main.engenharia-eletrica .card-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+}
+@media (min-width: 1024px) {
+  main.engenharia-eletrica .card-img {
+    max-height: 30vh;
+  }
+}
+main.engenharia-eletrica .serviscos-prestados {
+  background-color: rgba(0, 31, 63, 0.2);
+}
+main.engenharia-eletrica .card .card-title,
+main.engenharia-eletrica .card .card-body p {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+main.engenharia-eletrica .card-instalacao-eletrica {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/instalacaoEletrica.png");
+}
+main.engenharia-eletrica .card-spda {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/spda.jpg");
+}
+
+.why {
+  background-color: rgba(0, 31, 63, 0.2);
+}
+.why h3 span {
+  color: #001f3f;
+}
+.why a {
   text-decoration: none;
   color: #001f3f;
   font-weight: bold;
 }
-.servicos .why .imageContato img {
+.why .imageContato img {
   width: 100%;
   object-fit: cover;
   position: relative;
@@ -1919,7 +2004,7 @@ section {
   max-height: 15rem;
 }
 @media (min-width: 1200px) {
-  .servicos .why .imageContato img {
+  .why .imageContato img {
     max-height: 30vh;
   }
 }
@@ -1941,6 +2026,18 @@ section {
 .banner-servicos {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/bannerServicos.jpg");
   background-position-y: 52%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-engenharia-civil {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/bannerCivil.jpg");
+  background-position-y: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-engenharia-eletrica {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/bannerEletrico.jpg");
+  background-position-y: 60%;
   background-repeat: no-repeat;
   background-size: cover;
 }

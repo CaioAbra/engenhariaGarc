@@ -14,7 +14,7 @@ $(document).ready(function () {
     //accordion
     accordion()
 
-    accordionServicos()
+    Cardsaccordion()
 });
 
 function detectOperatingSystem() {
@@ -172,12 +172,12 @@ function accordion() {
 
 }
 
-function accordionServicos() {
-    $(".card-acordion .collapse").hide(); // Esconde todos os conteúdos do acordeão por padrão
+function Cardsaccordion() {
+    $(".card-acordion .collapseCard").hide(); // Esconde todos os conteúdos do acordeão por padrão
 
     $(".card-acordion").click(function () {
-        var content = $(this).find(".collapse"); // Alterado para encontrar .collapse dentro de .card-acordion
-        $(".collapse").not(content).slideUp(); // Fecha todos os outros conteúdos do acordeão
+        var content = $(this).find(".collapseCard"); // Alterado para encontrar .collapse dentro de .card-acordion
+        $(".collapseCard").not(content).slideUp(); // Fecha todos os outros conteúdos do acordeão
         content.slideToggle(); // Alterna a visibilidade do conteúdo clicado
     });
 }
