@@ -414,6 +414,51 @@ main.engenharia-eletrica {
     }
 }
 
+main.energiaSolar {
+    .benefits {
+        background-color: rgba($cor-primaria, .2);
+    }
+
+
+    .card {
+
+        .card-body,
+        .card-title {
+            color: white;
+            /* Define a cor do texto como branca */
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            /* Adiciona uma leve sombra ao texto para destacá-lo */
+            margin: 20px;
+            /* Adiciona margem para espaçamento */
+
+        }
+
+        &-Sustentabilidade {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/cardSustentabilidade.jpg');
+        }
+
+        &-Economia {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/cardEconomia.jpg');
+        }
+
+        &-independencia {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/cardIndependencia.jpg');
+        }
+
+        &-baixa-manutencao {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/cardManutencao.jpg');
+        }
+
+        &-valorizacao {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/cardValorizacao.jpg');
+        }
+
+        &-Incentivos {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/cardIncentivos.jpg');
+        }
+    }
+}
+
 .why {
     background-color: rgba($cor-primaria, .2);
 
@@ -481,6 +526,13 @@ main.engenharia-eletrica {
 
     &-engenharia-eletrica {
         background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/bannerEletrico.jpg');
+        background-position-y: 60%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-energiaSolar {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/bannerSolar.jpg');
         background-position-y: 60%;
         background-repeat: no-repeat;
         background-size: cover;

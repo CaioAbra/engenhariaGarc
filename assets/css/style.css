@@ -1984,6 +1984,37 @@ main.engenharia-eletrica .card-spda {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/spda.jpg");
 }
 
+main.energiaSolar .benefits {
+  background-color: rgba(0, 31, 63, 0.2);
+}
+main.energiaSolar .card .card-body,
+main.energiaSolar .card .card-title {
+  color: white;
+  /* Define a cor do texto como branca */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  /* Adiciona uma leve sombra ao texto para destacá-lo */
+  margin: 20px;
+  /* Adiciona margem para espaçamento */
+}
+main.energiaSolar .card-Sustentabilidade {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/cardSustentabilidade.jpg");
+}
+main.energiaSolar .card-Economia {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/cardEconomia.jpg");
+}
+main.energiaSolar .card-independencia {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/cardIndependencia.jpg");
+}
+main.energiaSolar .card-baixa-manutencao {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/cardManutencao.jpg");
+}
+main.energiaSolar .card-valorizacao {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/cardValorizacao.jpg");
+}
+main.energiaSolar .card-Incentivos {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/cardIncentivos.jpg");
+}
+
 .why {
   background-color: rgba(0, 31, 63, 0.2);
 }
@@ -2037,6 +2068,12 @@ main.engenharia-eletrica .card-spda {
 }
 .banner-engenharia-eletrica {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/bannerEletrico.jpg");
+  background-position-y: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-energiaSolar {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/bannerSolar.jpg");
   background-position-y: 60%;
   background-repeat: no-repeat;
   background-size: cover;
