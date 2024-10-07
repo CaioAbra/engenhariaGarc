@@ -4,3 +4,5 @@
 *.scss.map
 
 docs/
+
+*.htaccess

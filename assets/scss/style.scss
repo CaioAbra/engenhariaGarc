@@ -459,6 +459,17 @@ main.energiaSolar {
     }
 }
 
+main.contato {
+    a {
+        text-decoration: none;
+        color: $cor-primaria;
+    }
+
+    .perguntasFrequentes {
+        background-color: rgba($cor-primaria, .2);
+    }
+}
+
 .why {
     background-color: rgba($cor-primaria, .2);
 
@@ -534,6 +545,13 @@ main.energiaSolar {
     &-energiaSolar {
         background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/bannerSolar.jpg');
         background-position-y: 60%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-contato {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../img/bannerContato.jpg');
+        background-position-y: 90%;
         background-repeat: no-repeat;
         background-size: cover;
     }

@@ -1,6 +1,6 @@
 <nav class="navbar">
     <div class="logo">
-        <a href="<?php echo BASE_PATH; ?>"><img src="<?php echo BASE_PATH_ASSETS?>img/Logo_White.png" alt="Logo da Empresa"></a>
+        <a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_PATH_ASSETS; ?>img/Logo_White.png" alt="Logo da Empresa"></a>
     </div>
 
     <div class="menu-icon" id="menuIcon">
@@ -18,11 +18,10 @@
 
     <div class="collapse">
         <ul class="nav-links">
-            <li><a href="<?php echo BASE_PATH; ?>">Home</a></li>
-            <li><a href="<?php echo BASE_PATH; ?>quem-somos">Quem Somos</a></li>
+            <li><a href="<?php echo BASE_URL; ?>">Home</a></li>
+            <li><a href="<?php echo BASE_URL; ?>quem-somos">Quem Somos</a></li>
             <li class="dropdown">
-                <!-- <a class="dropdown-title" href="javascript:void(0)"> -->
-                <a class="dropdown-title" href="<?php echo BASE_PATH; ?>servicos">
+                <a class="dropdown-title" href="<?php echo BASE_URL; ?>servicos">
                     Serviços
                     <svg class="icon-dropdown desactived" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="6 9 12 15 18 9"></polyline>
@@ -33,13 +32,13 @@
                     </svg>
                 </a>
                 <div class="dropdown-content">
-                    <a href="<?php echo BASE_PATH; ?>servicos/engenharia-civil">Engenharia Civil</a>
-                    <a href="<?php echo BASE_PATH; ?>servicos/engenharia-eletrica">Engenharia Elétrica</a>
-                    <a href="<?php echo BASE_PATH; ?>servicos/energia-solar">Energia Solar</a>
+                    <a href="<?php echo BASE_URL; ?>servicos/engenharia-civil">Engenharia Civil</a>
+                    <a href="<?php echo BASE_URL; ?>servicos/engenharia-eletrica">Engenharia Elétrica</a>
+                    <a href="<?php echo BASE_URL; ?>servicos/energia-solar">Energia Solar</a>
                 </div>
             </li>
-            <li><a href="<?php echo BASE_PATH; ?>projetos">Projetos</a></li>
-            <li><a href="<?php echo BASE_PATH; ?>contato">Contato</a></li>
+            <!-- <li><a href="<?php echo BASE_URL; ?>projetos">Projetos</a></li> -->
+            <li><a href="<?php echo BASE_URL; ?>contato">Contato</a></li>
         </ul>
     </div>
 </nav>

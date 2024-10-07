@@ -31,14 +31,14 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="footer-infos">
                 <h3>Mapa do site</h3>
-                <p><a href="<?php echo BASE_PATH; ?>">Home</a></p>
-                <p><a href="<?php echo BASE_PATH; ?>quem-somos">Quem Somos</a></p>
-                <p><a href="<?php echo BASE_PATH; ?>servicos">Serviços</a></p>
-                <p><a href="<?php echo BASE_PATH; ?>servicos/engenharia-civil">Engenharia Civil</a></p>
-                <p><a href="<?php echo BASE_PATH; ?>servicos/engenharia-eletrica">Engenharia Elétrica</a></p>
-                <p><a href="<?php echo BASE_PATH; ?>servicos/energia-solar">Energia Solar</a></p>
-                <p><a href="<?php echo BASE_PATH; ?>projetos">Projetos</a></p>
-                <p><a href="<?php echo BASE_PATH; ?>contato">Contato</a></p>
+                <p><a href="<?php echo BASE_URL; ?>">Home</a></p>
+                <p><a href="<?php echo BASE_URL; ?>quem-somos">Quem Somos</a></p>
+                <p><a href="<?php echo BASE_URL; ?>servicos">Serviços</a></p>
+                <p><a href="<?php echo BASE_URL; ?>servicos/engenharia-civil">Engenharia Civil</a></p>
+                <p><a href="<?php echo BASE_URL; ?>servicos/engenharia-eletrica">Engenharia Elétrica</a></p>
+                <p><a href="<?php echo BASE_URL; ?>servicos/energia-solar">Energia Solar</a></p>
+                <!-- <p><a href="<?php echo BASE_URL; ?>projetos">Projetos</a></p> -->
+                <p><a href="<?php echo BASE_URL; ?>contato">Contato</a></p>
             </div>
         </div>
     </div>

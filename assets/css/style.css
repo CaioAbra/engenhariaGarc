@@ -2015,6 +2015,14 @@ main.energiaSolar .card-Incentivos {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/cardIncentivos.jpg");
 }
 
+main.contato a {
+  text-decoration: none;
+  color: #001f3f;
+}
+main.contato .perguntasFrequentes {
+  background-color: rgba(0, 31, 63, 0.2);
+}
+
 .why {
   background-color: rgba(0, 31, 63, 0.2);
 }
@@ -2075,6 +2083,12 @@ main.energiaSolar .card-Incentivos {
 .banner-energiaSolar {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/bannerSolar.jpg");
   background-position-y: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-contato {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/bannerContato.jpg");
+  background-position-y: 90%;
   background-repeat: no-repeat;
   background-size: cover;
 }
