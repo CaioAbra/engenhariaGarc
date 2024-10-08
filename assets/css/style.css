@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navbar {
   background-color: #001f3f;
   display: flex;
@@ -152,13 +153,13 @@
   }
 }
 
-.hero {
+main.home .hero {
   height: 100vh;
   background-size: cover;
   background-position: center;
   position: relative;
 }
-.hero::before {
+main.home .hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -167,7 +168,7 @@
   height: 100%;
   background-color: rgba(0, 31, 63, 0.6);
 }
-.hero .hero-text {
+main.home .hero .hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -175,14 +176,14 @@
   color: #fff;
   text-align: center;
 }
-.hero .hero-text h1 {
+main.home .hero .hero-text h1 {
   font-size: 3rem;
 }
-.hero .hero-text p {
+main.home .hero .hero-text p {
   font-size: 1.2rem;
   margin: 1rem 0;
 }
-.hero .hero-text .btn-hero {
+main.home .hero .hero-text .btn-hero {
   background-color: #0074cc;
   color: #fff;
   padding: 0.75rem 1.5rem;
@@ -191,190 +192,185 @@
   border-radius: 4px;
   transition: background-color 0.3s;
 }
-.hero .hero-text .btn-hero:hover {
+main.home .hero .hero-text .btn-hero:hover {
   background-color: #004080;
 }
-
-.sobre-nos {
+main.home .sobre-nos {
   background-color: #fff;
 }
-.sobre-nos .container {
+main.home .sobre-nos .container {
   padding: 2rem;
 }
-.sobre-nos .container .row {
+main.home .sobre-nos .container .row {
   align-items: center;
 }
-.sobre-nos .container img {
+main.home .sobre-nos .container img {
   max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.sobre-nos .container h2 {
+main.home .sobre-nos .container h2 {
   color: #001f3f;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
 }
-.sobre-nos .container p {
+main.home .sobre-nos .container p {
   color: #333;
   line-height: 1.6;
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
-.sobre-nos .container .btn {
+main.home .sobre-nos .container .btn {
   padding: 0.75rem 1.5rem;
   border: 2px solid #0074cc;
   color: #0074cc;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
 }
-.sobre-nos .container .btn:hover {
+main.home .sobre-nos .container .btn:hover {
   background-color: #0074cc;
   color: #fff;
 }
-
-.nossos-servicos {
+main.home .nossos-servicos {
   background-color: #fff;
 }
-.nossos-servicos h2 {
+main.home .nossos-servicos h2 {
   color: #001f3f;
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
-.nossos-servicos .service-card {
+main.home .nossos-servicos .service-card {
   background-color: #fff;
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-.nossos-servicos .service-card img {
+main.home .nossos-servicos .service-card img {
   max-width: 100%;
   border-radius: 8px;
 }
-.nossos-servicos .service-card h5 {
+main.home .nossos-servicos .service-card h5 {
   color: #001f3f;
   font-size: 1.5rem;
   margin-top: 1rem;
 }
-.nossos-servicos .service-card p {
+main.home .nossos-servicos .service-card p {
   color: #333;
   margin-top: 0.5rem;
   font-size: 1rem;
 }
-.nossos-servicos .service-card .btn-link {
+main.home .nossos-servicos .service-card .btn-link {
   color: #0074cc;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
-.nossos-servicos .service-card .btn-link:hover {
+main.home .nossos-servicos .service-card .btn-link:hover {
   color: #004080;
 }
-.nossos-servicos .service-card:hover {
+main.home .nossos-servicos .service-card:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 768px) {
-  .nossos-servicos .service-card {
+  main.home .nossos-servicos .service-card {
     margin-bottom: 2rem;
   }
 }
-
-.diferenciais {
+main.home .diferenciais {
   background-color: #001f3f;
   color: #fff;
   padding: 5rem 0;
 }
-.diferenciais h2 {
+main.home .diferenciais h2 {
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 3rem;
 }
-.diferenciais .row .col-md-4 {
+main.home .diferenciais .row .col-md-4 {
   text-align: center;
 }
-.diferenciais .row .col-md-4 i {
+main.home .diferenciais .row .col-md-4 i {
   color: #00a8e8;
   transition: color 0.3s ease;
 }
-.diferenciais .row .col-md-4 h5 {
+main.home .diferenciais .row .col-md-4 h5 {
   color: #fff;
   font-size: 1.5rem;
   margin-top: 1rem;
 }
-.diferenciais .row .col-md-4 p {
+main.home .diferenciais .row .col-md-4 p {
   color: #fff;
   font-size: 1rem;
   margin-top: 0.5rem;
 }
-.diferenciais .row .col-md-4:hover i {
+main.home .diferenciais .row .col-md-4:hover i {
   color: #004080;
 }
 @media (max-width: 768px) {
-  .diferenciais h2 {
+  main.home .diferenciais h2 {
     font-size: 2rem;
   }
-  .diferenciais .col-md-4 {
+  main.home .diferenciais .col-md-4 {
     margin-bottom: 2rem;
   }
-  .diferenciais .col-md-4 h5 {
+  main.home .diferenciais .col-md-4 h5 {
     font-size: 1.3rem;
   }
-  .diferenciais .col-md-4 p {
+  main.home .diferenciais .col-md-4 p {
     font-size: 0.95rem;
   }
 }
-
-.clientes {
+main.home .clientes {
   background-color: #fff;
   padding: 5rem 0;
 }
-.clientes .swiper {
+main.home .clientes .swiper {
   padding: 2rem 0;
 }
-.clientes .swiper .swiper-slide {
+main.home .clientes .swiper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.clientes .swiper .swiper-slide img {
+main.home .clientes .swiper .swiper-slide img {
   max-width: 80%;
   height: auto;
   filter: grayscale(100%);
   transition: filter 0.3s;
 }
-.clientes .swiper .swiper-slide img:hover {
+main.home .clientes .swiper .swiper-slide img:hover {
   filter: grayscale(0%);
 }
 @media (max-width: 768px) {
-  .clientes .swiper-slide img {
+  main.home .clientes .swiper-slide img {
     max-width: 70%;
   }
 }
 @media (max-width: 640px) {
-  .clientes .swiper-slide img {
+  main.home .clientes .swiper-slide img {
     max-width: 60%;
   }
 }
-
-.depoimentos {
+main.home .depoimentos {
   background-color: #fff;
   padding: 5rem 0;
 }
-.depoimentos h2 {
+main.home .depoimentos h2 {
   color: #001f3f;
   font-size: 2.5rem;
   margin-bottom: 3rem;
 }
-.depoimentos .swiper {
+main.home .depoimentos .swiper {
   padding: 2rem 0;
 }
-.depoimentos .swiper .swiper-slide {
+main.home .depoimentos .swiper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.depoimentos .swiper .swiper-slide blockquote {
+main.home .depoimentos .swiper .swiper-slide blockquote {
   font-size: 1.2rem;
   font-style: italic;
   color: #333;
@@ -382,57 +378,193 @@
   margin: 0 auto;
   position: relative;
 }
-.depoimentos .swiper .swiper-slide blockquote footer {
+main.home .depoimentos .swiper .swiper-slide blockquote footer {
   text-align: right;
   margin-top: 1rem;
   font-size: 1rem;
   color: #0074cc;
 }
-.depoimentos .swiper-pagination-bullet {
+main.home .depoimentos .swiper-pagination-bullet {
   background-color: #0074cc;
 }
 @media (max-width: 768px) {
-  .depoimentos blockquote {
+  main.home .depoimentos blockquote {
     font-size: 1rem;
   }
 }
-
-.chamada-contato {
+main.home .chamada-contato {
   background: linear-gradient(135deg, #0074cc, #004080);
   padding: 5rem 0;
   text-align: center;
 }
-.chamada-contato h2 {
+main.home .chamada-contato h2 {
   font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
   margin-bottom: 2rem;
 }
 @media (max-width: 768px) {
-  .chamada-contato h2 {
+  main.home .chamada-contato h2 {
     font-size: 2rem;
   }
 }
 @media (max-width: 480px) {
-  .chamada-contato h2 {
+  main.home .chamada-contato h2 {
     font-size: 1.8rem;
   }
 }
-.chamada-contato .btn {
+main.home .chamada-contato .btn {
   padding: 1rem 2rem;
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
   transition: background-color 0.3s, color 0.3s;
 }
-.chamada-contato .btn:hover {
+main.home .chamada-contato .btn:hover {
   background-color: #004080;
   color: #fff;
 }
 @media (max-width: 768px) {
-  .chamada-contato .btn {
+  main.home .chamada-contato .btn {
     font-size: 1rem;
     padding: 0.75rem 1.5rem;
+  }
+}
+
+.quem-somos .introducao h1 {
+  color: #001f3f;
+  font-size: 3rem;
+}
+.quem-somos .introducao p {
+  color: #333;
+  font-size: 1.2rem;
+}
+.quem-somos .historia-missao h2,
+.quem-somos .equipe h2,
+.quem-somos .certificacoes-projetos h2 {
+  color: #001f3f;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.quem-somos .historia-missao p,
+.quem-somos .equipe p,
+.quem-somos .certificacoes-projetos p {
+  color: #333;
+  font-size: 1.1rem;
+}
+.quem-somos .historia-missao img,
+.quem-somos .equipe img,
+.quem-somos .certificacoes-projetos img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.quem-somos .diferenciais h2,
+.quem-somos .diferenciais h5 {
+  color: #fff;
+}
+.quem-somos .diferenciais p {
+  color: #fff;
+}
+.quem-somos .diferenciais i {
+  color: #0074cc;
+}
+.quem-somos .certificacoes-projetos {
+  background-color: #fff;
+  padding: 5rem 0;
+  /* Responsividade */
+}
+.quem-somos .certificacoes-projetos h2 {
+  color: #001f3f;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.quem-somos .certificacoes-projetos i {
+  color: #0074cc;
+  transition: color 0.3s ease;
+}
+.quem-somos .certificacoes-projetos h5 {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.quem-somos .certificacoes-projetos p {
+  color: #333;
+  margin-top: 0.5rem;
+  transition: opacity 0.3s ease;
+  opacity: 0.9;
+  /* Suaviza o texto */
+}
+.quem-somos .certificacoes-projetos .col-md-4 {
+  position: relative;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.quem-somos .certificacoes-projetos .col-md-4:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.quem-somos .certificacoes-projetos .col-md-4:hover i {
+  color: #004080;
+}
+.quem-somos .certificacoes-projetos .col-md-4:hover p {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .quem-somos .certificacoes-projetos h5 {
+    font-size: 1.3rem;
+  }
+  .quem-somos .certificacoes-projetos p {
+    font-size: 1rem;
+  }
+}
+.quem-somos .valores-inovacao {
+  background-color: #fff;
+  padding: 5rem 0;
+  /* Responsividade */
+}
+.quem-somos .valores-inovacao h2 {
+  color: #001f3f;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.quem-somos .valores-inovacao i {
+  color: #0074cc;
+}
+.quem-somos .valores-inovacao h5 {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.quem-somos .valores-inovacao p {
+  color: #333;
+  margin-top: 0.5rem;
+}
+.quem-somos .valores-inovacao .row .col-md-6 img {
+  max-width: 90%;
+  border-radius: 12px;
+  opacity: 0.9;
+  /* Suaviza a imagem */
+  filter: brightness(0.9);
+  /* Reduz o brilho para deixar mais leve */
+  transition: opacity 0.3s ease, filter 0.3s ease;
+  /* Transição suave para efeitos */
+}
+.quem-somos .valores-inovacao .row .col-md-6 img:hover {
+  opacity: 1;
+  /* Restaura a opacidade total ao passar o mouse */
+  filter: brightness(1);
+  /* Deixa a imagem mais brilhante no hover */
+}
+@media (max-width: 768px) {
+  .quem-somos .valores-inovacao h5 {
+    font-size: 1.3rem;
+  }
+  .quem-somos .valores-inovacao img {
+    max-width: 100%;
+    /* Ajusta a imagem para telas menores */
   }
 }
 

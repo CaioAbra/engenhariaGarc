@@ -30,7 +30,7 @@
                         <p>A GARC foi fundada com o propósito de ser referência em soluções de engenharia. Nossa missão é fornecer serviços que melhorem a qualidade de vida, através de inovações tecnológicas e um forte compromisso com a sustentabilidade.</p>
                     </div>
                     <div class="col-md-6">
-                        <img src="<?php echo BASE_PATH_ASSETS; ?>img/quem-somos.jpg" class="img-fluid rounded" alt="Nossa história">
+                        <img src="<?php echo BASE_PATH_ASSETS; ?>img/quem-somos.webp" class="img-fluid rounded" alt="Nossa história">
                     </div>
                 </div>
             </div>
@@ -60,32 +60,42 @@
             </div>
         </section>
 
-        <!-- Seção de Equipe -->
-        <section class="equipe py-5">
+        <!-- Seção de Valores e Inovação -->
+        <section class="valores-inovacao py-5 bg-light">
             <div class="container">
-                <h2 class="text-center mb-4">Nossa Equipe</h2>
+                <h2 class="text-center mb-4">Nossos Valores e Inovação</h2>
                 <div class="row text-center">
-                    <!-- Equipe membro 1 -->
+                    <!-- Valor 1 -->
                     <div class="col-md-4 mb-4">
-                        <img src="<?php echo BASE_PATH_ASSETS; ?>img/equipe1.jpg" class="img-fluid rounded-circle mb-2" alt="Nome do Membro">
-                        <h5>Nome do Membro</h5>
-                        <p>Engenheiro Civil</p>
+                        <i class="fas fa-balance-scale fa-3x mb-2"></i>
+                        <h5>Integridade</h5>
+                        <p>Comprometidos com a transparência e ética em todos os nossos projetos e relacionamentos.</p>
                     </div>
-                    <!-- Equipe membro 2 -->
+                    <!-- Valor 2 -->
                     <div class="col-md-4 mb-4">
-                        <img src="<?php echo BASE_PATH_ASSETS; ?>img/equipe2.jpg" class="img-fluid rounded-circle mb-2" alt="Nome do Membro">
-                        <h5>Nome do Membro</h5>
-                        <p>Engenheiro Elétrico</p>
+                        <i class="fas fa-lightbulb fa-3x mb-2"></i>
+                        <h5>Inovação</h5>
+                        <p>Utilizamos tecnologia de ponta para oferecer soluções sustentáveis e eficientes em engenharia.</p>
                     </div>
-                    <!-- Equipe membro 3 -->
+                    <!-- Valor 3 -->
                     <div class="col-md-4 mb-4">
-                        <img src="<?php echo BASE_PATH_ASSETS; ?>img/equipe3.jpg" class="img-fluid rounded-circle mb-2" alt="Nome do Membro">
-                        <h5>Nome do Membro</h5>
-                        <p>Gerente de Projetos</p>
+                        <i class="fas fa-users fa-3x mb-2"></i>
+                        <h5>Colaboração</h5>
+                        <p>Trabalhamos em equipe, priorizando o sucesso de cada projeto com foco no cliente.</p>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h5>Tecnologia de Ponta</h5>
+                        <p>Nosso diferencial está no uso de tecnologias modernas para garantir eficiência e qualidade em cada projeto.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="<?php echo BASE_PATH_ASSETS; ?>img/tecnologia.webp" class="img-fluid rounded" alt="Tecnologia de ponta">
                     </div>
                 </div>
             </div>
         </section>
+
 
         <!-- Seção de Certificações e Projetos -->
         <section class="certificacoes-projetos bg-light py-5">

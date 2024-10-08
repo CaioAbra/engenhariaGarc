@@ -1,0 +1,172 @@
+.quem-somos {
+    .introducao {
+        h1 {
+            color: $cor-primaria;
+            font-size: 3rem;
+        }
+
+        p {
+            color: $cor-texto;
+            font-size: 1.2rem;
+        }
+    }
+
+    .historia-missao,
+    .equipe,
+    .certificacoes-projetos {
+        h2 {
+            color: $cor-primaria;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            color: $cor-texto;
+            font-size: 1.1rem;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    .diferenciais {
+
+        h2,
+        h5 {
+            color: $cor-texto-navbar;
+        }
+
+        p {
+            color: $cor-texto-navbar;
+        }
+
+        i {
+            color: $cor-secundaria-1;
+        }
+    }
+
+    .certificacoes-projetos {
+        background-color: $cor-fundo;
+        padding: 5rem 0;
+
+        h2 {
+            color: $cor-primaria;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        i {
+            color: $cor-secundaria-1;
+            transition: color 0.3s ease;
+        }
+
+        h5 {
+            color: $cor-primaria;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        p {
+            color: $cor-texto;
+            margin-top: 0.5rem;
+            transition: opacity 0.3s ease;
+            opacity: 0.9;
+            /* Suaviza o texto */
+        }
+
+        .col-md-4 {
+            position: relative;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            }
+
+            &:hover i {
+                color: $cor-hover;
+            }
+
+            &:hover p {
+                opacity: 1;
+            }
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h5 {
+                font-size: 1.3rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .valores-inovacao {
+        background-color: $cor-fundo;
+        padding: 5rem 0;
+
+        h2 {
+            color: $cor-primaria;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        i {
+            color: $cor-secundaria-1;
+        }
+
+        h5 {
+            color: $cor-primaria;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        p {
+            color: $cor-texto;
+            margin-top: 0.5rem;
+        }
+
+        .row {
+            .col-md-6 {
+                img {
+                    max-width: 90%;
+                    border-radius: 12px;
+                    opacity: 0.9;
+                    /* Suaviza a imagem */
+                    filter: brightness(0.9);
+                    /* Reduz o brilho para deixar mais leve */
+                    transition: opacity 0.3s ease, filter 0.3s ease;
+                    /* Transição suave para efeitos */
+
+                    &:hover {
+                        opacity: 1;
+                        /* Restaura a opacidade total ao passar o mouse */
+                        filter: brightness(1);
+                        /* Deixa a imagem mais brilhante no hover */
+                    }
+                }
+            }
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h5 {
+                font-size: 1.3rem;
+            }
+
+            img {
+                max-width: 100%;
+                /* Ajusta a imagem para telas menores */
+            }
+        }
+    }
+}
