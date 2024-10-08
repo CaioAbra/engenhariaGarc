@@ -922,6 +922,89 @@ main.home .chamada-contato .btn:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.spda .intro-spda h1 {
+  color: #001f3f;
+  font-size: 2.5rem;
+}
+.spda .intro-spda p {
+  color: #333;
+  font-size: 1.2rem;
+}
+.spda .servicos-spda .servico-detalhe {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+}
+.spda .servicos-spda .servico-detalhe h5 {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.spda .servicos-spda .servico-detalhe p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+.spda .servicos-spda .servico-detalhe:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+  .spda .servicos-spda .servico-detalhe {
+    margin-bottom: 1.5rem;
+  }
+}
+.spda .projetos-recentes h2 {
+  color: #001f3f;
+  font-size: 2rem;
+}
+.spda .projetos-recentes img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.spda .projetos-recentes h5 {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.spda .beneficios-spda h2 {
+  color: #001f3f;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.spda .beneficios-spda i {
+  color: #0074cc;
+}
+.spda .beneficios-spda h5 {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.spda .beneficios-spda p {
+  color: #333;
+  margin-top: 0.5rem;
+}
+.spda .chamada-contato h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+.spda .chamada-contato a.btn {
+  background-color: #0074cc;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.spda .chamada-contato a.btn:hover {
+  background-color: #004080;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 *,
 ::after,
 ::before {

@@ -62,7 +62,7 @@
         </section>
 
         <!-- Seção de Projetos Recentes -->
-        <section class="projetos-recentes bg-light py-5">
+        <section class="projetos-recentes bg-light py-5 d-none">
             <div class="container">
                 <h2 class="text-center mb-4">Projetos Recentes</h2>
                 <div class="row text-center">
