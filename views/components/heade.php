@@ -31,4 +31,8 @@
 
 <!-- Estilos e Ícone da Página -->
 <link rel="shortcut icon" type="image/png" href="<?php echo BASE_PATH_ASSETS; ?>img/ico.png">
+<link rel="stylesheet" href="<?php echo BASE_PATH_ASSETS; ?>lib/bootstrap-4.6.2-dist/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="<?php echo BASE_PATH_ASSETS; ?>lib/bootstrap-4.6.2-dist/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="<?php echo BASE_PATH_ASSETS; ?>lib/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 <link rel="stylesheet" href="<?php echo BASE_PATH_ASSETS; ?>css/style.css">
