@@ -11,6 +11,7 @@
                     <li><a href="<?php echo BASE_URL; ?>servicos/engenharia-civil">Engenharia Civil</a></li>
                     <li><a href="<?php echo BASE_URL; ?>servicos/engenharia-eletrica">Engenharia Elétrica</a></li>
                     <li><a href="<?php echo BASE_URL; ?>servicos/energia-solar">Energia Solar</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>servicos/spda">SPDA</a></li>
                     <li><a href="<?php echo BASE_URL; ?>contato">Contato</a></li>
                 </ul>
             </div>

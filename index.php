@@ -26,6 +26,7 @@ $routes = [
     'servicos/engenharia-civil' => 'EngenhariaCivilController',
     'servicos/engenharia-eletrica' => 'EngenhariaEletricaController',
     'servicos/energia-solar' => 'EnergiaSolarController',
+    'servicos/spda' => 'SpdaController',
     'projetos' => 'ProjetosController',
     'contato' => 'ContatoController',
     // Adicione mais rotas conforme necessário

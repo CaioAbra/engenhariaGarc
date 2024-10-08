@@ -1,13 +1,6 @@
-// main.scss
-// @import 'variables', 'mixins', 'collors', 'components/navbar';
-
-@import 'variables';
-@import 'collors';
-@import 'mixins';
-@import 'components/navbar';
-@import 'layouts/home';
-@import 'layouts/quemSomos';
-@import 'components/footer';
+@import 'variables', 'collors', 'mixins';
+@import 'components/navbar', 'components/footer';
+@import 'layouts/home', 'layouts/quemSomos', 'layouts/nossosSevicos', 'layouts/engenhariaCivil','layouts/engenhariaEletrica';
 
 // Estilos para todos os elementos
 *,

@@ -153,6 +153,48 @@
   }
 }
 
+.footer-infos {
+  margin-bottom: 2rem;
+}
+.footer-infos h3 {
+  font-size: 1.5rem;
+  color: #001f3f;
+  margin-bottom: 1rem;
+}
+.footer-infos ul {
+  padding: 0;
+  list-style: none;
+}
+.footer-infos ul li {
+  margin-bottom: 0.5rem;
+}
+.footer-infos ul a {
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+.footer-infos ul a:hover {
+  color: #0074cc;
+}
+.footer-infos p,
+.footer-infos a {
+  font-size: 1rem;
+  color: #333;
+}
+.footer-infos a:hover {
+  color: #0074cc;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .footer-infos h3 {
+    font-size: 1.3rem;
+  }
+  .footer-infos p,
+  .footer-infos a {
+    font-size: 0.9rem;
+  }
+}
+
 main.home .hero {
   height: 100vh;
   background-size: cover;
@@ -568,46 +610,233 @@ main.home .chamada-contato .btn:hover {
   }
 }
 
-.footer-infos {
-  margin-bottom: 2rem;
-}
-.footer-infos h3 {
-  font-size: 1.5rem;
+.servicos .intro-servicos h1 {
   color: #001f3f;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
-.footer-infos ul {
-  padding: 0;
-  list-style: none;
-}
-.footer-infos ul li {
-  margin-bottom: 0.5rem;
-}
-.footer-infos ul a {
+.servicos .intro-servicos p {
   color: #333;
-  font-size: 1rem;
-  transition: color 0.3s;
+  font-size: 1.2rem;
 }
-.footer-infos ul a:hover {
-  color: #0074cc;
+.servicos .servicos-detalhes .servico-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.footer-infos p,
-.footer-infos a {
-  font-size: 1rem;
+.servicos .servicos-detalhes .servico-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.servicos .servicos-detalhes .servico-card h5 {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.servicos .servicos-detalhes .servico-card p {
   color: #333;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
 }
-.footer-infos a:hover {
-  color: #0074cc;
-  text-decoration: underline;
+.servicos .servicos-detalhes .servico-card a.btn {
+  background-color: #0074cc;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.servicos .servicos-detalhes .servico-card a.btn:hover {
+  background-color: #004080;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.servicos .servicos-detalhes .servico-card a.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 116, 204, 0.5);
+}
+.servicos .servicos-detalhes .servico-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 768px) {
-  .footer-infos h3 {
-    font-size: 1.3rem;
+  .servicos .servicos-detalhes .servico-card {
+    margin-bottom: 1.5rem;
   }
-  .footer-infos p,
-  .footer-infos a {
-    font-size: 0.9rem;
+}
+
+.engenharia-civil .intro-civil h1 {
+  color: #001f3f;
+  font-size: 2.5rem;
+}
+.engenharia-civil .intro-civil p {
+  color: #333;
+  font-size: 1.2rem;
+}
+.engenharia-civil .servicos-civil .servico-detalhe {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.engenharia-civil .servicos-civil .servico-detalhe h5 {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.engenharia-civil .servicos-civil .servico-detalhe p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+.engenharia-civil .servicos-civil .servico-detalhe:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+  .engenharia-civil .servicos-civil .servico-detalhe {
+    margin-bottom: 1.5rem;
   }
+}
+.engenharia-civil .projetos-recentes h2 {
+  color: #001f3f;
+  font-size: 2rem;
+}
+.engenharia-civil .projetos-recentes img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.engenharia-civil .projetos-recentes h5 {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.engenharia-civil .diferenciais-civil h2 {
+  color: #001f3f;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.engenharia-civil .diferenciais-civil i {
+  color: #0074cc;
+}
+.engenharia-civil .diferenciais-civil h5 {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.engenharia-civil .diferenciais-civil p {
+  color: #333;
+  margin-top: 0.5rem;
+}
+.engenharia-civil .chamada-contato {
+  background-color: #0074cc;
+  padding: 4rem 0;
+}
+.engenharia-civil .chamada-contato h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+.engenharia-civil .chamada-contato a.btn {
+  background-color: #0074cc;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.engenharia-civil .chamada-contato a.btn:hover {
+  background-color: #004080;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.engenharia-eletrica .intro-eletrica h1 {
+  color: #001f3f;
+  font-size: 2.5rem;
+}
+.engenharia-eletrica .intro-eletrica p {
+  color: #333;
+  font-size: 1.2rem;
+}
+.engenharia-eletrica .servicos-eletrica .servico-detalhe {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+}
+.engenharia-eletrica .servicos-eletrica .servico-detalhe h5 {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.engenharia-eletrica .servicos-eletrica .servico-detalhe p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+.engenharia-eletrica .servicos-eletrica .servico-detalhe:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+  .engenharia-eletrica .servicos-eletrica .servico-detalhe {
+    margin-bottom: 1.5rem;
+  }
+}
+.engenharia-eletrica .projetos-recentes h2 {
+  color: #001f3f;
+  font-size: 2rem;
+}
+.engenharia-eletrica .projetos-recentes img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.engenharia-eletrica .projetos-recentes h5 {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.engenharia-eletrica .diferenciais-eletrica h2 {
+  color: #001f3f;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.engenharia-eletrica .diferenciais-eletrica i {
+  color: #0074cc;
+}
+.engenharia-eletrica .diferenciais-eletrica h5 {
+  color: #001f3f;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.engenharia-eletrica .diferenciais-eletrica p {
+  color: #333;
+  margin-top: 0.5rem;
+}
+.engenharia-eletrica .chamada-contato h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+.engenharia-eletrica .chamada-contato a.btn {
+  background-color: #0074cc;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.engenharia-eletrica .chamada-contato a.btn:hover {
+  background-color: #004080;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 *,

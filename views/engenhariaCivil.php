@@ -12,173 +12,118 @@
     <?php include 'components/navbar.php';  ?>
 
     <main class="engenharia-civil">
-        <section class="banner banner-engenharia-civil">
-            <div class="container">
-                <div class="row align-content-center">
-                    <div class="col-12">
-                        <h6 class="banner-subtitle">Conheça Mais</h6>
-                        <h1 class="banner-title">Engenharia Civil: Construindo o Futuro</h1>
-                    </div>
-                </div>
+        <!-- Seção de Introdução -->
+        <section class="intro-civil bg-light py-5">
+            <div class="container text-center">
+                <h1 class="mb-4">Engenharia Civil</h1>
+                <p class="lead">Na Engenharia GARC, oferecemos serviços especializados em alvenaria, manutenção, pintura, revestimento e serralheria, sempre com foco em qualidade e eficiência.</p>
             </div>
         </section>
 
-        <section>
+        <!-- Seção de Serviços Detalhados -->
+        <section class="servicos-civil py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-8">
-                        <h4>O que é a engenharia civil?</h4>
-                        <p>
-                            A Engenharia Civil é a arte de moldar o mundo ao nosso redor, criando estruturas que
-                            sustentam e inspiram nossa sociedade. Dos arranha-céus imponentes às pontes majestosas, os
-                            engenheiros civis são os arquitetos do progresso, garantindo que nossas cidades cresçam com
-                            segurança e sustentabilidade.
-                        </p>
+                <div class="row text-center">
+                    <!-- Serviço: Alvenaria -->
+                    <div class="col-md-6 mb-4">
+                        <div class="servico-detalhe p-4 bg-white shadow rounded">
+                            <h5>Alvenaria</h5>
+                            <p>Execução de serviços de alvenaria com máxima precisão, desde fundações até acabamentos de parede e estrutura.</p>
+                        </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card-img">
-                            <img src="<?php echo BASE_PATH_ASSETS;?>img/whyEnengenhariaCivil.jpg" alt="" srcset="">
+                    <!-- Serviço: Manutenção -->
+                    <div class="col-md-6 mb-4">
+                        <div class="servico-detalhe p-4 bg-white shadow rounded">
+                            <h5>Manutenção</h5>
+                            <p>Manutenção preventiva e corretiva para garantir a durabilidade e o bom funcionamento das estruturas e instalações.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="serviscos-prestados">
-            <div class="container">
-                <div class="row text-align-center">
-                    <div class="col-12">
-                        <h4>
-                            Serviços Prestados
-                        </h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="card card-acordion card-Alvenaria">
-                            <div class="card-body">
-                                <h5 class="card-title mb-0">Alvenaria</h5>
-                            </div>
-                            <div class="collapseCard">
-                                <div class="card-body">
-                                    <p>
-                                        A Alvenaria é o alicerce da construção civil, onde cada tijolo é uma peça do
-                                        quebra-cabeça que forma nossos lares e comunidades. É a arte de empilhar blocos
-                                        e pedras para criar não apenas paredes, mas sim símbolos de estabilidade e
-                                        durabilidade. Das casas acolhedoras aos edifícios imponentes, a alvenaria é a
-                                        base sobre a qual construímos nosso futuro.
-                                    </p>
-                                </div>
-                            </div>
+                <div class="row text-center">
+                    <!-- Serviço: Pintura -->
+                    <div class="col-md-6 mb-4">
+                        <div class="servico-detalhe p-4 bg-white shadow rounded">
+                            <h5>Pintura</h5>
+                            <p>Serviços de pintura residencial e comercial, com acabamentos de alta qualidade e produtos de primeira linha.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="card card-acordion card-Manutencao">
-                            <div class="card-body">
-                                <h5 class="card-title mb-0">Manutenção</h5>
-                            </div>
-                            <div class="collapseCard">
-                                <div class="card-body">
-                                    <p>
-                                        A Manutenção é o coração pulsante da engenharia civil, garantindo que as
-                                        estruturas que criamos continuem a prosperar com o tempo. É o cuidado meticuloso
-                                        e o trabalho árduo que preservam a integridade das nossas construções,
-                                        protegendo não apenas o que está à vista, mas também as fundações que sustentam
-                                        nossas esperanças e sonhos.
-                                    </p>
-                                </div>
-                            </div>
+
+                    <!-- Serviço: Revestimento -->
+                    <div class="col-md-6 mb-4">
+                        <div class="servico-detalhe p-4 bg-white shadow rounded">
+                            <h5>Revestimento</h5>
+                            <p>Revestimentos internos e externos, utilizando os melhores materiais para acabamentos duráveis e estéticos.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="card card-acordion card-Pintura">
-                            <div class="card-body">
-                                <h5 class="card-title mb-0">Pintura</h5>
-                            </div>
-                            <div class="collapseCard">
-                                <div class="card-body">
-                                    <p>
-                                        A Pintura é a paleta com a qual damos vida aos nossos espaços, transformando
-                                        paredes nuas em telas de expressão e beleza. Cada pincelada é uma história, cada
-                                        cor uma emoção, e cada parede um testemunho do nosso estilo e personalidade. Da
-                                        simplicidade de um branco puro à vibrante complexidade das cores, a pintura é a
-                                        arte que torna nossas casas verdadeiramente nossas.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="card card-acordion card-Revestimento">
-                            <div class="card-body">
-                                <h5 class="card-title mb-0">Revestimento</h5>
-                            </div>
-                            <div class="collapseCard">
-                                <div class="card-body">
-                                    <p>
-                                        O Revestimento é a armadura que protege e embeleza nossas construções,
-                                        adicionando camadas de sofisticação e funcionalidade aos espaços que habitamos.
-                                        Dos azulejos luxuosos aos porcelanatos resistentes, cada material é uma escolha
-                                        cuidadosa, uma declaração de estilo e uma garantia de qualidade. É a última peça
-                                        do quebra-cabeça que transforma uma simples casa em um lar acolhedor e elegante.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="card card-acordion card-Serralheria">
-                            <div class="card-body">
-                                <h5 class="card-title mb-0">Serralheria</h5>
-                            </div>
-                            <div class="collapseCard">
-                                <div class="card-body">
-                                    <p>
-                                        A Serralheria é a arte de moldar o metal, transformando-o em obras de arte que
-                                        resistem ao tempo e à adversidade. Dos portões imponentes às grades ornamentais,
-                                        cada peça é forjada com habilidade e precisão, unindo forma e função em uma
-                                        harmonia duradoura. É o toque final que eleva uma construção simples à categoria
-                                        de obra-prima, adicionando um brilho de elegância e segurança ao nosso ambiente.
-                                    </p>
-                                </div>
-                            </div>
+
+                    <!-- Serviço: Serralheria -->
+                    <div class="col-md-6 mb-4">
+                        <div class="servico-detalhe p-4 bg-white shadow rounded">
+                            <h5>Serralheria</h5>
+                            <p>Projetos e execução de serralheria com foco em qualidade e precisão para estruturas metálicas personalizadas.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="why">
+        <!-- Seção de Projetos Recentes -->
+        <section class="projetos-recentes bg-light py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <h3>
-                            Por que escolher a <span>GARC</span>?
-                        </h3>
-                        <p>
-                            Na GARC Engenharia, nosso compromisso é superar as expectativas de nossos clientes em cada
-                            projeto que realizamos. Entre em contato conosco hoje mesmo para saber como podemos ajudá-lo
-                            a transformar sua visão em realidade.
-                        </p>
-
-                        <a href="<?php echo BASE_PATH; ?>contato">
-                            Fale conosco !
-                        </a>
-
+                <h2 class="text-center mb-4">Projetos Recentes</h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <img src="<?php echo BASE_PATH_ASSETS; ?>img/projeto-civil1.webp" class="img-fluid rounded" alt="Projeto 1">
+                        <h5 class="mt-3">Projeto Residencial</h5>
                     </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="imageContato">
-                            <img src="<?php echo BASE_PATH_ASSETS; ?>img/entreEmContato.jpg" alt="" srcset="">
-                        </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="<?php echo BASE_PATH_ASSETS; ?>img/projeto-civil2.webp" class="img-fluid rounded" alt="Projeto 2">
+                        <h5 class="mt-3">Projeto Comercial</h5>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <img src="<?php echo BASE_PATH_ASSETS; ?>img/projeto-civil3.webp" class="img-fluid rounded" alt="Projeto 3">
+                        <h5 class="mt-3">Reforma Industrial</h5>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Seção de Diferenciais Técnicos -->
+        <section class="diferenciais-civil py-5">
+            <div class="container text-center">
+                <h2>Diferenciais Técnicos</h2>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <i class="fas fa-check-circle fa-3x mb-3"></i>
+                        <h5>Qualidade e Segurança</h5>
+                        <p>Garantimos qualidade em cada fase do projeto, priorizando a segurança e a durabilidade.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-cogs fa-3x mb-3"></i>
+                        <h5>Tecnologia de Ponta</h5>
+                        <p>Utilizamos as mais modernas tecnologias para garantir eficiência e precisão nas execuções.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-leaf fa-3x mb-3"></i>
+                        <h5>Sustentabilidade</h5>
+                        <p>Nossos projetos são desenvolvidos com foco em soluções sustentáveis para reduzir impactos ambientais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Chamada para Ação -->
+        <section class="chamada-contato text-center text-light bg-secondary py-5">
+            <h2>Entre em Contato para Solicitar um Orçamento!</h2>
+            <a href="<?php echo BASE_PATH; ?>contato" class="btn btn-light mt-3">Fale Conosco</a>
         </section>
     </main>
 
-    <footer class="">
+    <footer class="mt-5">
         <?php include 'components/footer.php'; ?>
     </footer>
     <?php

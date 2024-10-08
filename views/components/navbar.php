@@ -35,6 +35,7 @@
                     <a href="<?php echo BASE_URL; ?>servicos/engenharia-civil">Engenharia Civil</a>
                     <a href="<?php echo BASE_URL; ?>servicos/engenharia-eletrica">Engenharia Elétrica</a>
                     <a href="<?php echo BASE_URL; ?>servicos/energia-solar">Energia Solar</a>
+                    <a href="<?php echo BASE_URL; ?>servicos/spda">SPDA</a>
                 </div>
             </li>
             <!-- <li><a href="<?php echo BASE_URL; ?>projetos">Projetos</a></li> -->

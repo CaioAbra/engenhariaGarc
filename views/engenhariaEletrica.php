@@ -12,130 +12,110 @@
     <?php include 'components/navbar.php';  ?>
 
     <main class="engenharia-eletrica">
-        <section class="banner banner-engenharia-eletrica">
-            <div class="container">
-                <div class="row align-content-center">
-                    <div class="col-12">
-                        <h6 class="banner-subtitle">Conheça Mais</h6>
-                        <h1 class="banner-title">Engenharia Elétrica: Energizando o Mundo Moderno</h1>
-                    </div>
-                </div>
+        <!-- Seção de Introdução -->
+        <section class="intro-eletrica bg-light py-5">
+            <div class="container text-center">
+                <h1 class="mb-4">Engenharia Elétrica</h1>
+                <p class="lead">Oferecemos serviços completos de engenharia elétrica, desde instalações residenciais até projetos industriais de alta complexidade.</p>
             </div>
         </section>
 
-        <section>
+        <!-- Seção de Serviços Detalhados -->
+        <section class="servicos-eletrica py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-8">
-                        <h4>
-                            O QUE É A ENGENHARIA ELÉTRICA?
-                        </h4>
-                        <p>
-                            A Engenharia Elétrica é o campo que explora os princípios da eletricidade, eletromagnetismo
-                            e eletrônica para impulsionar o progresso em diversas áreas.
-                        </p>
-                        <p>
-                            Originada no século XIX com o advento da energia elétrica comercial, esta disciplina
-                            desempenha um papel vital na concepção, implementação e otimização de sistemas elétricos
-                            para alimentar o mundo moderno.
-                        </p>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card-img">
-                            <img src="<?php echo BASE_PATH_ASSETS;?>img/bannerEletrico.jpg" alt="" srcset="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="serviscos-prestados">
-            <div class="container">
-                <div class="row text-align-center">
-                    <div class="col-12">
-                        <h4>
-                            Serviços Prestados
-                        </h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="card card-acordion card-instalacao-eletrica">
-                            <div class="card-body">
-                                <h5 class="card-title mb-0">Instalação Elétrica</h5>
-                            </div>
-                            <div class="collapseCard">
-                                <div class="card-body">
-                                    <p>
-                                        A instalação elétrica é a espinha dorsal que facilita a transferência eficiente
-                                        de energia elétrica de sua fonte até os pontos de uso. Seja conectando-se à rede
-                                        de distribuição de energia ou a geradores privados, cada fio e dispositivo
-                                        desempenha um papel crucial na garantia de um fornecimento seguro e confiável de
-                                        eletricidade.
-                                    </p>
-                                </div>
-                            </div>
+                <div class="row text-center">
+                    <!-- Serviço: Instalações Elétricas -->
+                    <div class="col-md-6 mb-4">
+                        <div class="servico-detalhe p-4 bg-white shadow rounded">
+                            <h5>Instalações Elétricas</h5>
+                            <p>Execução de instalações elétricas em projetos residenciais, comerciais e industriais, garantindo eficiência e segurança.</p>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="card card-acordion card-spda">
-                            <div class="card-body">
-                                <h5 class="card-title mb-0">SISTEMAS DE PROTEÇÃO CONTRA DESCARGAS ATMOSFÉRICAS - SPDA
-                                </h5>
-                            </div>
-                            <div class="collapseCard">
-                                <div class="card-body">
-                                    <p>
-                                        Os Sistemas de Proteção Contra Descargas Atmosféricas (SPDA), conhecidos
-                                        popularmente como para-raios, são mais do que meros adornos em telhados. São
-                                        salvaguardas essenciais, exigidas pelos órgãos reguladores e elaboradas conforme
-                                        as normas técnicas rigorosas da ABNT.
-                                    </p>
-                                    <p>
-                                        Seu propósito é mitigar os danos causados por descargas atmosféricas, desde
-                                        incêndios devastadores até a proteção da vida e da integridade dos sistemas
-                                        elétricos. Investir em um SPDA é investir na segurança e na tranquilidade.
-                                    </p>
-                                </div>
-                            </div>
+                    <!-- Serviço: Manutenção Elétrica -->
+                    <div class="col-md-6 mb-4">
+                        <div class="servico-detalhe p-4 bg-white shadow rounded">
+                            <h5>Manutenção Elétrica</h5>
+                            <p>Manutenção preventiva e corretiva de sistemas elétricos, com foco em reduzir custos e garantir a segurança.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <!-- Serviço: Projetos Industriais -->
+                    <div class="col-md-6 mb-4">
+                        <div class="servico-detalhe p-4 bg-white shadow rounded">
+                            <h5>Projetos Industriais</h5>
+                            <p>Desenvolvimento de projetos elétricos para indústrias, com soluções eficientes e personalizadas para cada tipo de processo.</p>
+                        </div>
+                    </div>
+
+                    <!-- Serviço: Eficiência Energética -->
+                    <div class="col-md-6 mb-4">
+                        <div class="servico-detalhe p-4 bg-white shadow rounded">
+                            <h5>Eficiência Energética</h5>
+                            <p>Projetos de otimização de energia elétrica, ajudando a reduzir custos e promover o uso sustentável da energia.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="why">
+        <!-- Seção de Projetos Recentes -->
+        <section class="projetos-recentes bg-light py-5 d-none">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <h3>
-                            Por que escolher a <span>GARC</span>?
-                        </h3>
-                        <p>
-                            Na GARC Engenharia, nosso compromisso é superar as expectativas de nossos clientes em cada
-                            projeto que realizamos. Entre em contato conosco hoje mesmo para saber como podemos ajudá-lo
-                            a transformar sua visão em realidade.
-                        </p>
-
-                        <a href="<?php echo BASE_PATH; ?>contato">
-                            Fale conosco !
-                        </a>
-
+                <h2 class="text-center mb-4">Projetos Recentes</h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <img src="<?php echo BASE_PATH_ASSETS; ?>img/projeto-eletrica1.jpg" class="img-fluid rounded" alt="Projeto 1">
+                        <h5 class="mt-3">Instalação Residencial</h5>
                     </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="imageContato">
-                            <img src="<?php echo BASE_PATH_ASSETS; ?>img/entreEmContato.jpg" alt="" srcset="">
-                        </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="<?php echo BASE_PATH_ASSETS; ?>img/projeto-eletrica2.jpg" class="img-fluid rounded" alt="Projeto 2">
+                        <h5 class="mt-3">Projeto Comercial</h5>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <img src="<?php echo BASE_PATH_ASSETS; ?>img/projeto-eletrica3.jpg" class="img-fluid rounded" alt="Projeto 3">
+                        <h5 class="mt-3">Projeto Industrial</h5>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Seção de Diferenciais Técnicos -->
+        <section class="diferenciais-eletrica py-5">
+            <div class="container text-center">
+                <h2>Diferenciais Técnicos</h2>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <i class="fas fa-check-circle fa-3x mb-3"></i>
+                        <h5>Qualidade e Segurança</h5>
+                        <p>Garantimos qualidade em cada fase do projeto, priorizando a segurança e a durabilidade dos sistemas elétricos.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-cogs fa-3x mb-3"></i>
+                        <h5>Tecnologia Avançada</h5>
+                        <p>Utilizamos as mais modernas tecnologias para garantir eficiência e precisão nas execuções elétricas.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-leaf fa-3x mb-3"></i>
+                        <h5>Sustentabilidade</h5>
+                        <p>Nossos projetos são desenvolvidos com foco em soluções energéticas sustentáveis e de baixo impacto ambiental.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Chamada para Ação -->
+        <section class="chamada-contato text-center text-light bg-secondary py-5">
+            <h2>Entre em Contato para Solicitar um Orçamento!</h2>
+            <a href="<?php echo BASE_PATH; ?>contato" class="btn btn-light mt-3">Fale Conosco</a>
         </section>
     </main>
 
-    <footer class="">
+    <footer class=" mt-5">
         <?php include 'components/footer.php'; ?>
     </footer>
     <?php
