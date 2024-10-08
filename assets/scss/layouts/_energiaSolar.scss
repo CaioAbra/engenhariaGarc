@@ -1,0 +1,111 @@
+.energia-solar {
+    .intro-solar {
+        h1 {
+            color: $cor-primaria;
+            font-size: 2.5rem;
+        }
+
+        p {
+            color: $cor-texto;
+            font-size: 1.2rem;
+        }
+    }
+
+    .servicos-solar {
+        .servico-detalhe {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 1.5rem;
+
+            h5 {
+                color: $cor-primaria;
+                font-size: 1.5rem;
+                margin-top: 1rem;
+            }
+
+            p {
+                color: $cor-texto;
+                font-size: 1.1rem;
+                margin-top: 0.5rem;
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            }
+        }
+
+        // Responsividade
+        @media (max-width: 768px) {
+            .servico-detalhe {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .projetos-recentes {
+        h2 {
+            color: $cor-primaria;
+            font-size: 2rem;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        h5 {
+            color: $cor-primaria;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .beneficios-solar {
+        h2 {
+            color: $cor-primaria;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        i {
+            color: $cor-secundaria-1;
+        }
+
+        h5 {
+            color: $cor-primaria;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        p {
+            color: $cor-texto;
+            margin-top: 0.5rem;
+        }
+    }
+
+    .chamada-contato {
+        h2 {
+            font-size: 2rem;
+            color: $cor-texto-navbar;
+        }
+
+        a.btn {
+            background-color: $cor-secundaria-1;
+            color: $cor-texto-navbar;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                background-color: $cor-hover;
+                transform: translateY(-3px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
