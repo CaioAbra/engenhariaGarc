@@ -1,44 +1,37 @@
 <div class="container">
     <div class="row justify-center pb-2 pt-1">
+        <!-- Mapa do Site -->
         <div class="col-12 col-md-6 col-lg-4">
             <div class="footer-infos">
-                <h3>Contato</h3>
-                <h6 class="mt-0">Telefone:</h6>
-                <p>
-                    <a href="tel:11941262774">11 94126-2774</a><br>
-                    <a href="tel:11941262774">11 94019-7369</a>
-                </p>
-                <h6 class="mt-0">E-mail:</h6>
-                <p>
-                    <a href="mail-to:engenhariagarc@engenhariagarc.com">engenhariagarc@engenhariagarc.com</a>
-                </p>
+                <h3>Mapa do Site</h3>
+                <ul class="list-unstyled">
+                    <li><a href="<?php echo BASE_URL; ?>">Home</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>quem-somos">Quem Somos</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>servicos">Serviços</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>servicos/engenharia-civil">Engenharia Civil</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>servicos/engenharia-eletrica">Engenharia Elétrica</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>servicos/energia-solar">Energia Solar</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>contato">Contato</a></li>
+                </ul>
             </div>
         </div>
 
+        <!-- Horário de Funcionamento -->
         <div class="col-12 col-md-6 col-lg-4">
             <div class="footer-infos">
                 <h3>Funcionamento</h3>
-                <p>Seg: 8h às 18h</p>
-                <p>Ter: 8h às 18h</p>
-                <p>Qua: 8h às 18h</p>
-                <p>Qui: 8h às 18h</p>
-                <p>Sex: 8h às 18h</p>
-                <p>Sab: 8h às 18h</p>
+                <p>Seg a Sab: 8h às 18h</p>
                 <p>Dom: Fechado</p>
             </div>
         </div>
 
+        <!-- Contato Resumido -->
         <div class="col-12 col-md-6 col-lg-4">
             <div class="footer-infos">
-                <h3>Mapa do site</h3>
-                <p><a href="<?php echo BASE_URL; ?>">Home</a></p>
-                <p><a href="<?php echo BASE_URL; ?>quem-somos">Quem Somos</a></p>
-                <p><a href="<?php echo BASE_URL; ?>servicos">Serviços</a></p>
-                <p><a href="<?php echo BASE_URL; ?>servicos/engenharia-civil">Engenharia Civil</a></p>
-                <p><a href="<?php echo BASE_URL; ?>servicos/engenharia-eletrica">Engenharia Elétrica</a></p>
-                <p><a href="<?php echo BASE_URL; ?>servicos/energia-solar">Energia Solar</a></p>
-                <!-- <p><a href="<?php echo BASE_URL; ?>projetos">Projetos</a></p> -->
-                <p><a href="<?php echo BASE_URL; ?>contato">Contato</a></p>
+                <h3>Entre em Contato</h3>
+                <p><a href="tel:11941262774">11 94126-2774</a></p>
+                <p><a href="tel:11994019-7369">11 94019-7369</a></p>
+                <p><a href="mailto:engenhariagarc@engenhariagarc.com">engenhariagarc@engenhariagarc.com</a></p>
             </div>
         </div>
     </div>

@@ -141,25 +141,95 @@
         <section class="depoimentos bg-light py-5">
             <div class="container">
                 <h2 class="text-center">O que nossos clientes dizem</h2>
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <blockquote class="blockquote">
-                            <p>"Excelente atendimento e serviço de primeira qualidade! Recomendo a GARC para todos que buscam uma obra bem feita."</p>
-                            <footer class="blockquote-footer">João Silva</footer>
-                        </blockquote>
+                <div class="swiper mySwiperDepoimentos">
+                    <div class="swiper-wrapper">
+                        <!-- Depoimento 1 -->
+                        <div class="swiper-slide">
+                            <blockquote class="blockquote text-center">
+                                <p>"A GARC nos ajudou a construir um sistema de energia solar que reduziu nossa conta de luz em 40%. Recomendo demais!"</p>
+                                <footer class="blockquote-footer">Carlos Martins</footer>
+                            </blockquote>
+                        </div>
+                        <!-- Depoimento 2 -->
+                        <div class="swiper-slide">
+                            <blockquote class="blockquote text-center">
+                                <p>"Excelente atendimento e cumprimento de prazos. A equipe é muito competente e atenciosa."</p>
+                                <footer class="blockquote-footer">Fernanda Souza</footer>
+                            </blockquote>
+                        </div>
+                        <!-- Depoimento 3 -->
+                        <div class="swiper-slide">
+                            <blockquote class="blockquote text-center">
+                                <p>"Trabalhar com a GARC foi uma experiência incrível. O projeto de SPDA foi executado com precisão e dentro do orçamento."</p>
+                                <footer class="blockquote-footer">João Silva</footer>
+                            </blockquote>
+                        </div>
+                        <!-- Depoimento 4 -->
+                        <div class="swiper-slide">
+                            <blockquote class="blockquote text-center">
+                                <p>"A equipe da GARC trouxe soluções inovadoras para o nosso projeto de construção civil. Estamos extremamente satisfeitos."</p>
+                                <footer class="blockquote-footer">Marcos Lima</footer>
+                            </blockquote>
+                        </div>
+                        <!-- Depoimento 5 -->
+                        <div class="swiper-slide">
+                            <blockquote class="blockquote text-center">
+                                <p>"Eles cuidaram de todo o sistema elétrico da nossa empresa com grande eficiência. O suporte técnico foi excelente."</p>
+                                <footer class="blockquote-footer">Ana Paula</footer>
+                            </blockquote>
+                        </div>
+                        <!-- Depoimento 6 -->
+                        <div class="swiper-slide">
+                            <blockquote class="blockquote text-center">
+                                <p>"A GARC entregou nosso projeto de energia solar antes do prazo e com uma qualidade impecável. Altamente recomendados!"</p>
+                                <footer class="blockquote-footer">Maria Oliveira</footer>
+                            </blockquote>
+                        </div>
+                        <!-- Depoimento 7 -->
+                        <div class="swiper-slide">
+                            <blockquote class="blockquote text-center">
+                                <p>"Uma das melhores empresas com quem já trabalhei. A GARC é sinônimo de qualidade e compromisso com o cliente."</p>
+                                <footer class="blockquote-footer">Pedro Azevedo</footer>
+                            </blockquote>
+                        </div>
+                        <!-- Depoimento 8 -->
+                        <div class="swiper-slide">
+                            <blockquote class="blockquote text-center">
+                                <p>"Recomendo a GARC para qualquer projeto elétrico. A equipe é super competente e focada na segurança."</p>
+                                <footer class="blockquote-footer">Rafael Gomes</footer>
+                            </blockquote>
+                        </div>
+                        <!-- Depoimento 9 -->
+                        <div class="swiper-slide">
+                            <blockquote class="blockquote text-center">
+                                <p>"Profissionais altamente qualificados e um atendimento impecável. Voltaremos a trabalhar com a GARC em futuros projetos."</p>
+                                <footer class="blockquote-footer">Isabela Mendes</footer>
+                            </blockquote>
+                        </div>
+                        <!-- Depoimento 10 -->
+                        <div class="swiper-slide">
+                            <blockquote class="blockquote text-center">
+                                <p>"A GARC nos ajudou a finalizar o projeto de para-raios em tempo recorde, com qualidade e segurança. Parabéns!"</p>
+                                <footer class="blockquote-footer">Rodrigo Campos</footer>
+                            </blockquote>
+                        </div>
                     </div>
-                    <!-- Repetir para mais depoimentos -->
+                    <!-- Paginação -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
 
         <section class="chamada-contato text-center text-light bg-secondary py-5">
-            <h2>Entre em Contato e Faça um Orçamento!</h2>
-            <a href="<?php echo BASE_PATH; ?>contato" class="btn btn-light mt-3">Fale Conosco</a>
+            <div class="container">
+                <h2>Entre em Contato e Faça um Orçamento!</h2>
+                <a href="<?php echo BASE_PATH; ?>contato" class="btn btn-light mt-3">Fale Conosco</a>
+            </div>
         </section>
+
     </main>
 
-    <footer class="mt-1">
+    <footer class="mt-5">
         <?php include 'components/footer.php'; ?>
     </footer>
 

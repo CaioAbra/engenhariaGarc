@@ -1,0 +1,50 @@
+.footer-infos {
+    margin-bottom: 2rem;
+
+    h3 {
+        font-size: 1.5rem;
+        color: $cor-primaria;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: $cor-texto;
+            font-size: 1rem;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $cor-secundaria-1;
+            }
+        }
+    }
+
+    p,
+    a {
+        font-size: 1rem;
+        color: $cor-texto;
+    }
+
+    a:hover {
+        color: $cor-secundaria-1;
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        p,
+        a {
+            font-size: 0.9rem;
+        }
+    }
+}

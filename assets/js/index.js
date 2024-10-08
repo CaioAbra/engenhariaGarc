@@ -150,3 +150,16 @@ var swiper = new Swiper('.mySwiper', {
         },
     },
 });
+
+
+var swiperDepoimentos = new Swiper('.mySwiperDepoimentos', {
+    loop: true, // Loop infinito
+    autoplay: {
+        delay: 4000, // Tempo de espera entre os slides
+        disableOnInteraction: false, // Continua mesmo após interação
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // Paginação clicável
+    },
+});

@@ -245,3 +245,90 @@
         }
     }
 }
+
+.depoimentos {
+    background-color: $cor-fundo;
+    padding: 5rem 0;
+
+    h2 {
+        color: $cor-primaria;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .swiper {
+        padding: 2rem 0;
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            blockquote {
+                font-size: 1.2rem;
+                font-style: italic;
+                color: $cor-texto;
+                max-width: 80%;
+                margin: 0 auto;
+                position: relative;
+
+                footer {
+                    text-align: right;
+                    margin-top: 1rem;
+                    font-size: 1rem;
+                    color: $cor-secundaria-1;
+                }
+            }
+        }
+    }
+
+    .swiper-pagination-bullet {
+        background-color: $cor-secundaria-1;
+    }
+
+    @media (max-width: 768px) {
+        blockquote {
+            font-size: 1rem;
+        }
+    }
+}
+
+.chamada-contato {
+    background: linear-gradient(135deg, $cor-secundaria-1, $cor-hover); // Gradiente suave
+    padding: 5rem 0;
+    text-align: center;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $cor-texto-navbar; // Cor do texto clara
+        margin-bottom: 2rem;
+
+        // Responsividade
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: $cor-hover; // Cor ao passar o mouse
+            color: $cor-texto-navbar;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+            padding: 0.75rem 1.5rem;
+        }
+    }
+}
